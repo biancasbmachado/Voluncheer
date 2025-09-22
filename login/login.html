@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login</title>
+  <link rel="stylesheet" href="stylelog.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <link rel=""icon" href="img/favicon.ico">
+
+</head>
+<body>
+  <body>
+    <div class="tabs-container">
+      <div class="tab-buttons">
+        <button class="tab-btn active" data-tab="ong">Cadastro para ONGs</button>
+        <button class="tab-btn" data-tab="voluntario">Cadastro para Voluntários</button>
+      </div>
+  
+      <div class="tab-content active" id="ong">
+        <div class="card">
+          <h2>Cadastro para ONGs</h2>
+          <p>Conecte sua ONG a pessoas prontas para fazer a diferença.</p>
+          <form>
+            <input type="text" placeholder="Nome da ONG" required />
+            <input type="email" placeholder="Email institucional" required />
+            <input type="password" placeholder="Senha" required />
+            <button type="submit">Cadastrar ONG</button>
+          </form>
+        </div>
+      </div>
+  
+      <div class="tab-content" id="voluntario">
+        <div class="card">
+          <h2>Cadastro para Voluntários</h2>
+          <p>Junte-se a projetos e faça a diferença!</p>
+          <form>
+            <input type="text" placeholder="Seu nome" required />
+            <input type="email" placeholder="Seu email" required />
+            <input type="password" placeholder="Senha" required />
+            <button type="submit">Cadastrar Voluntário</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div id="popup" class="popup hidden">
+      <div class="popup-content">
+        <h3>Cadastro realizado com sucesso!</h3>
+        <p>Bem-vindo(a) à plataforma!</p>
+        <button onclick="closePopup()">Fechar</button>
+      </div>
+    </div>
+  
+    <script>
+      const buttons = document.querySelectorAll('.tab-btn');
+      const contents = document.querySelectorAll('.tab-content');
+    
+      buttons.forEach(btn => {
+        btn.addEventListener('click', () => {
+          buttons.forEach(b => b.classList.remove('active'));
+          contents.forEach(c => c.classList.remove('active'));
+    
+          btn.classList.add('active');
+          document.getElementById(btn.dataset.tab).classList.add('active');
+        });
+      });
+    
+      const emailRegex = /[^@ \t\r\n]+@[^@ \t\r\n]+\.[^@ \t\r\n]+/;
+      const senhaRegex = /^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$ %^&*-]).{8,}$/;
+    
+      const forms = document.querySelectorAll("form");
+      forms.forEach(form => {
+        form.addEventListener("submit", function(e) {
+          e.preventDefault();
+    
+          const emailInput = form.querySelector('input[type="email"]');
+          const senhaInput = form.querySelector('input[type="password"]');
+          const email = emailInput.value;
+          const senha = senhaInput.value;
+    
+          if (!emailRegex.test(email)) {
+            alert("Por favor, insira um e-mail válido.");
+            emailInput.focus();
+            return;
+          }
+    
+          if (!senhaRegex.test(senha)) {
+            alert("A senha deve conter no mínimo 8 caracteres, incluindo letra maiúscula, minúscula, número e caractere especial.");
+            senhaInput.focus();
+            return;
+          }
+    
+          document.getElementById("popup").classList.remove("hidden");
+        });
+      });
+    
+      function closePopup() {
+        document.getElementById("popup").classList.add("hidden");
+      }
+    </script>
+    
+    
+
+  </body>
+  
+

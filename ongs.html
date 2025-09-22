@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ONG'S</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sumana:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alata&family=Sumana&display=swap" rel="stylesheet">
+    <link rel="icon" href="img/favicon.ico">
+</head>
+<body>
+<section class="PrimeiroFundo">
+
+        <div class="fundo">
+            <div class="headerONG"></div>
+        </div>
+
+        <div class="conteudo">
+            <nav>
+                <div class="titulo">
+                    <img src="./img/testedois.png" alt="">
+                </div>
+                <div class="opcoes">
+                <a href="./index.html"><button class="sumana-regular">HOME</button></a>
+                <a href="./sobre.html"><button class="sumana-regular">SOBRE</button></a>
+                <a href="./ongs.html"><button class="sumana-regular">ONG'S</button></a>
+                <a href="./contatos.html"><button class="sumana-regular">CONTATOS</button></a>
+                </div>
+                <div class="perfil">
+                    <a href="/login/login.html">
+                    <button><i class="bi bi-person"></i></button>
+                    </a>
+                </div>
+            </nav>
+        </div>
+        <div class="header-slider">
+            <div class="slider-track" id="sliderTrack">
+                <a href="ongsreciclagem.html" class="slide">
+                <img src="img/ongspage/reciclagem.png" alt="ONGs de Reciclagem">
+                <div class="caption">ONGs de Reciclagem</div>
+                </a>
+                <a href="ongscuidadosaosidosos.html" class="slide">
+                <img src="img/ongspage/idosos.png" alt="ONGs de Cuidado aos Idosos">
+                <div class="caption">ONGs de Cuidado aos Idosos</div>
+                </a>
+                <a href="ongsprotecaoaosanimais.html" class="slide">
+                <img src="img/ongspage/animais.png" alt="ONGs de Proteção aos Animais">
+                <div class="caption">ONGs de Proteção aos Animais</div>
+                </a>
+                <a href="ongsapoioasaude.html" class="slide">
+                <img src="img/ongspage/saude.png" alt="ONGs de Apoio à Saúde">
+                <div class="caption">ONGs de Apoio à Saúde</div>
+                </a>
+                <a href="ongcoletadelixo.html" class="slide">
+                <img src="img/ongspage/coleta.png" alt="ONGs de Coleta de Lixo">
+                <div class="caption">ONGs de Coleta de Lixo</div>
+                </a>
+                <a href="ongscombateafome.html" class="slide">
+                <img src="img/ongspage/comida.png" alt="ONGs de Combate à Fome">
+                <div class="caption">ONGs de Combate à Fome</div>
+                </a>
+                <a href="ongsreciclagem.html" class="slide">
+                <img src="img/ongspage/reciclagem.png" alt="ONGs de Reciclagem">
+                <div class="caption">ONGs de Reciclagem</div>
+                </a>
+                <a href="ongscuidadosaosidosos.html" class="slide">
+                <img src="img/ongspage/idosos.png" alt="ONGs de Cuidado aos Idosos">
+                <div class="caption">ONGs de Cuidado aos Idosos</div>
+                </a>
+                <a href="ongsprotecaoaosanimais.html" class="slide">
+                <img src="img/ongspage/animais.png" alt="ONGs de Proteção aos Animais">
+                <div class="caption">ONGs de Proteção aos Animais</div>
+                </a>
+                <a href="ongsapoioasaude.html" class="slide">
+                <img src="img/ongspage/saude.png" alt="ONGs de Apoio à Saúde">
+                <div class="caption">ONGs de Apoio à Saúde</div>
+                </a>
+                <a href="ongcoletadelixo.html" class="slide">
+                <img src="img/ongspage/coleta.png" alt="ONGs de Coleta de Lixo">
+                <div class="caption">ONGs de Coleta de Lixo</div>
+                </a>
+                <a href="ongscombateafome.html" class="slide">
+                <img src="img/ongspage/comida.png" alt="ONGs de Combate à Fome">
+                <div class="caption">ONGs de Combate à Fome</div>
+                </a>
+            </div>
+        </div>
+        <script>
+            const track = document.getElementById("sliderTrack");
+            const slides = document.querySelectorAll(".slide");
+            const totalSlides = slides.length;
+            let currentIndex = 0;
+            setInterval(() => {
+            currentIndex = (currentIndex + 1) % totalSlides;
+            track.style.transform = `translateX(-${currentIndex * 100}vw)`;
+            }, 6000);
+        </script>
+    </section>
+
+    <section class="SegundoFundoONGs">
+        <div class="fundo2">
+            <div class="search-container-ongs">
+                <form class="search-bar" action="#" method="get">
+                    <input type="text" placeholder="Pesquisar...">
+                    <button type="submit">
+                    <img src="img/lupa.png" alt="Buscar" class="lupa-icon">
+                    </button>
+                </form>
+            </div>
+            <div class="txteventos"><h3>Próximos Eventos</h3></div>
+            <div class="eventos-ongs">
+                <h3 class="txteventos2" style="margin-top: 1%;">21/06/2025 - 06h às 11h</h3>
+                <div class="eventos-ongs-item">
+                    <img src="img/MEDICOS VOLUNTARIOS.jpg" alt="ONG de Apoio à Saúde Comunitária">
+                    <div class="eventos-ongs-conteudo">
+                    <h3><a href="ongsapoioasaude.html">ONG Cuidar é Viver - Multirão pela vida</a></h3>
+                    <h4><a href="ongsapoioasaude.html">Um mutirão de saúde e acolhimento! Durante o Dia do Cuidado Comunitário, oferecemos atendimento médico e psicológico gratuito, vacinação, testes rápidos, rodas de conversa sobre saúde mental e atividades para idosos, mulheres e jovens. É a comunidade cuidando de si mesma, com amor e informação.</a></h4>
+                    </div>
+                </div>
+                <h3 class="txteventos2">21/06/2025 - 08h às 11h</h3>
+                <div class="eventos-ongs-item">
+                    <img src="img/animais.jpg" alt="ONG de Proteção aos Animais">
+                    <div class="eventos-ongs-conteudo">
+                    <h3><a href="ongsprotecaoaosanimais.html">ONG garras do bem - feirinha de patas</a></h3>
+                    <h4><a href="ongsprotecaoaosanimais.html">Um sábado especial para adotar, amar e ajudar! A Feirinha de Patas reúne animais resgatados prontos para encontrar um novo lar, além de contar com venda de produtos pet, oficinas educativas para crianças, arrecadação de ração e um bate-papo com veterinários e protetores. Traga sua família (inclusive a de quatro patas)!</a></h4>
+                    </div>
+                </div>
+                <h3 class="txteventos2">22/06/2025 - 19h</h3>
+                <div class="eventos-ongs-item">
+                    <img src="img/voluntario agua.jpg" alt="ONG de Combate à Fome">
+                    <div class="eventos-ongs-conteudo">
+                    <h3><a href="ongscombateafome.html">ONG Barriga Cheia - Banquete Popular Semanal</a></h3>
+                     <h4><a href="ongscombateafome.html">Uma grande mesa no coração da cidade. A Cozinha Solidária na Praça serve refeições quentes e nutritivas para pessoas em situação de vulnerabilidade, com o apoio de chefs voluntários e moradores locais. Além da comida, o evento oferece cortes de cabelo, atividades culturais e escuta ativa — porque dignidade também se serve com afeto.</a></h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <section class="footerongs">
+            <div class="imgfooter">
+                <img src="img/footer.jpg" alt="Imagem do Footer">
+            </div>
+            <div class="conteudo-footer">
+            <div class="logos">
+                <a href="https://www.facebook.com/?locale=pt_BR" target="_blank" rel="noopener noreferrer"><img src="img/face.png" alt="Logo do Facebook"></a> 
+                <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer"><img src="img/yt.png" alt="Logo do YouTube"></a>
+                <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer"><img src="img/insta.png" alt="Logo do Instagram"></a>
+            </div>
+
+            <div class="atalhos">
+                <p><a href="index.html">HOME</a></p>
+                <p><a href="sobre.html">SOBRE</a></p>
+                <p><a href="ongs.html">ONG'S</a></p>
+                <p><a href="contatos.html">CONTATOS</a></p>
+            </div>
+            </div>
+        </section>
+    </footer>
+    
+</body>
+</html>
