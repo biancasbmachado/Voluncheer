@@ -6,6 +6,7 @@
     <title>ONG'S</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="style.css">
+    <link href="jsongs.js">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Sumana:wght@400;700&display=swap" rel="stylesheet">
@@ -91,16 +92,6 @@
                 </a>
             </div>
         </div>
-        <script>
-            const track = document.getElementById("sliderTrack");
-            const slides = document.querySelectorAll(".slide");
-            const totalSlides = slides.length;
-            let currentIndex = 0;
-            setInterval(() => {
-            currentIndex = (currentIndex + 1) % totalSlides;
-            track.style.transform = `translateX(-${currentIndex * 100}vw)`;
-            }, 6000);
-        </script>
     </section>
 
     <section class="SegundoFundoONGs">
