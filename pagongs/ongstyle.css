@@ -9,7 +9,6 @@
   min-height: 100vh; 
   overflow: visible;
 }
-
 .fundo{
   position: absolute; 
   top: 0;
@@ -142,6 +141,8 @@
 
 .SegundoFundo{
   min-height: auto;
+  margin-bottom: 30px;
+  margin-top: 30px;
 }
 
 .fundo2{
@@ -173,7 +174,93 @@ html, body {
     height: 100%;
 }
 
+footer{
+    background-image: url('../img/footer.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 40px 20px 0;
+    text-align: center;
+    font-family: "Alata", sans-serif;
+}
 
+.footer-container {
+    display: flex; 
+    justify-content: space-around; 
+    flex-wrap: wrap; 
+    gap: 20px; 
+    max-width: 1200px;
+    margin: 0 auto; 
+}
+
+.footer-column {
+    flex: 1; 
+    min-width: 250px; 
+}
+
+.footer-column h4 {
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: larger;
+}
+
+.footer-column p {
+    line-height: 1.5;
+    color:#CBCFF9 ;
+    size: 14px;
+}
+
+.footer-links {
+    list-style: none; 
+    padding: 0;
+}
+
+.footer-links a {
+    color: #d1d1d1;
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #FFFFFF; 
+    transform: scale(1.1);
+}
+
+.footer-links li a {
+    color: #CBCFF9;
+    text-decoration: none; 
+    line-height: 2;
+}
+
+.footer-links li a:hover {
+    text-decoration: underline;
+}
+
+.social-logos a {
+    margin: 0 10px; 
+    text-decoration: none;
+}
+
+.social-logos a:hover img {
+    opacity: 1;
+    transform: scale(1.15); 
+}
+
+.social-logos img {
+    width: 32px; 
+    height: auto;
+    opacity: 0.8;
+}
+
+.footer-bottom {
+    flex-basis: 100%;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2); 
+    font-size:14px;
+}
 
 .search-container {
     display: flex;
@@ -290,7 +377,7 @@ html, body {
   background: linear-gradient(to left, #6faef7, #0153d5);
   width: 100%; 
   height: 11.8%;
-  background-image: url(./img/fundoONG.png);
+  background-image: url(../img/fundoONG.png);
   background-repeat: no-repeat;
   background-size: cover;
 }
