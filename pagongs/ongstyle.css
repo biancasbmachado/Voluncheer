@@ -1,0 +1,437 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.PrimeiroFundo{
+  position: relative; 
+  min-height: 100vh; 
+  overflow: visible;
+}
+
+.fundo{
+  position: absolute; 
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  z-index: 0;
+  pointer-events: none;  
+}
+.AzulEscuro{
+  background: linear-gradient(to left, #6faef7, #0153d5);
+  width: 70%;
+  height: 100%;
+  background-image: url(./img/VOLUNTEER.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.AzulClaro{
+  background: linear-gradient(to bottom, #93cff9, #b5e0fb);
+  width: 30%;
+  height: 100%;
+}
+.voluntarios {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 68vw; 
+  height: auto;
+  z-index: 1;
+  max-height: 100vh;
+  overflow: hidden;
+}
+
+.voluntarios img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.conteudo {
+  position: relative; 
+  z-index: 1; 
+}
+
+.PrimeiroFundo nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 1%;
+  padding-right: 1%;
+  padding-left: 0;
+}
+
+.opcoes{
+  display: flex;
+  gap: 5%;
+  position: relative;
+  left: -7%;
+}
+
+.opcoes button{
+  cursor: pointer;
+  background-color: #2859B6;
+  border: 1px solid #fff;
+  width: 100%;
+  min-width: 30%;
+  min-height: 30%;
+  padding: 1vh 1vw;
+  border-radius: 20px;
+  color: #fff;
+  font-family: "Sumana", serif;
+  font-size: 0.8vw;
+  line-height: 1.2;
+  white-space: nowrap;
+  text-align: center;
+  margin: 0.5%;
+
+}
+
+.perfil button{
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #BDE4FF;
+  color: #4729E1;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 35px;
+}
+
+.perfil input{
+  width: 60%;
+  height: 60%;
+  border: 0;
+  background: none;
+  object-fit: contain;
+}
+
+.containerTexto {
+  width: 50%;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.texto {
+  color: #fff;
+  position: absolute;
+  top: 40%;
+  left: 38%;
+  transform: translate(-50%, -50%);
+  font-size: 1.5vw;
+  max-width: 800px;
+  text-align: left;
+  word-wrap: break-word;
+  letter-spacing: 0px;
+  line-height: 100%;
+}
+
+.titulo {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.SegundoFundo{
+  min-height: auto;
+}
+
+.fundo2{
+  background-color: rgb(255, 255, 255);
+  width: 100%;
+  height: auto;
+}
+.alata-regular {
+  font-family: "Alata", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.sumana-regular {
+  font-family: "Sumana", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.sumana-bold {
+  font-family: "Sumana", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+
+
+.search-container {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+    width: 100%;
+    margin-top:1%;
+}
+
+.search-bar {
+    display: flex;
+    width: 100%;
+    max-width: 500px;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
+}
+
+.search-bar input {
+    padding: 10px 15px;
+    border: 2px solid #4f83f1;
+    border-right: none;
+    border-radius: 8px 0 0 8px;
+    outline: none;
+    font-size: 1em;
+    height: 50px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.search-bar button {
+    height: 50px;
+    padding: 0 20px;
+    background-color: #4f83f1;
+    border: 2px solid #4f83f1;
+    border-left: none;
+    border-radius: 0 8px 8px 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-bar button:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.lupa-icon {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+}
+
+.ImagensPag2 {
+    display: grid;
+    grid-template-columns: repeat(3, max-content);
+    column-gap: 0; 
+    row-gap: 10px; 
+    justify-content: center; 
+    padding: 0;
+}
+
+.ImagensPag2 a,
+.ImagensPag2 h3 a {
+    display: inline-block; 
+    color: black;
+    text-decoration: none;
+    font-family: "Sumana", serif;
+    font-weight: 400;
+    font-size: 1em;
+}
+
+.ImagensPag2 a:visited,
+.ImagensPag2 h3 a:visited {
+    color: black;
+    text-decoration: none;
+}
+
+.ImagensPag2 a:hover,
+.ImagensPag2 h3 a:hover {
+    text-decoration: underline;
+}
+
+.ong-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 10px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+    height: 300px;
+}
+
+.ong-item img {
+    width: 280px; 
+    height: 220px; 
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.ong-item h3 {
+    margin-top: 4px;
+    font-family: "Alata", serif;
+    font-weight: 400;
+    font-size: 0.9em;
+    text-align: center;
+}
+
+.ong-item:hover {
+    background-color: #92ccf6;
+}
+
+.headerONG{
+  background: linear-gradient(to left, #6faef7, #0153d5);
+  width: 100%; 
+  height: 11.8%;
+  background-image: url(./img/fundoONG.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.SegundoFundoONGs{
+  position: relative;
+  z-index: 1;
+  margin-top: -16%; 
+}
+
+.search-container-ongs {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+    margin-top:1.2%;
+    width: 100%;
+}
+
+.header-slider {
+  width: 100%;
+  overflow: hidden;
+  height: 100%;
+  position: relative;
+  margin-top: 1%;
+}
+
+.slider-track {
+  display: flex;
+  transition: transform 2s ease-in-out;
+}
+
+.slide {
+  width: 100vw;
+  height: 100%;
+  position: relative;
+  flex-shrink: 0;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.caption {
+  position: absolute;
+  bottom: 30px;
+  left: 30px;
+  font-family: "Alata", serif;
+  text-transform: uppercase;
+  font-size: 24px;
+  background: rgba(128,128,128,0.3);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+}
+
+.txteventos{
+  text-align: left;
+  font-family: "Alata", serif;
+  font-size: 23px;
+  font-style:normal;
+  margin-left: 2.5%;
+  margin-top: -3.5%;
+  color: #0153d5;
+}
+
+.txteventos2{
+  text-align: left;
+  font-family: "Alata", serif;
+  font-size: 14px;
+  font-style:normal;
+  margin-left: 2.5%;
+  margin-bottom: -2%;
+  color: grey;
+}
+
+.eventos-ongs {
+    display: flex;
+    flex-direction: column;
+    gap: 16px; 
+    width: 100%;
+}
+
+.eventos-ongs a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.eventos-ongs-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 2.5%;
+    margin-top: 1%;
+    justify-content: flex-start;
+    padding: 8px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+    height: auto;
+    width: 95%;
+    box-sizing: border-box;
+    background-color: #f4f4f4;
+}
+
+.eventos-ongs-item img {
+    width: 150px; 
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-right: 20px;
+}
+
+.eventos-ongs-item h3 {
+    font-family: "Alata", serif;
+    font-weight: bold;
+    font-size: 18px;
+    text-transform: uppercase;
+    margin: 0;
+    text-align: left;
+    color: #4380dc;
+}
+
+.eventos-ongs-item h4 {
+    font-family: "Alata", serif;
+    font-weight: normal;
+    font-size: 14px;
+    margin: 0;
+    text-align: left;
+    color: grey;
+}
+
+.eventos-ongs-item:hover {
+    background-color: #92ccf6;
+}
+
+.footerongs {
+    position: relative;
+    width: 100%;
+    height: 150px;
+    overflow: hidden;
+    margin-top: 2.5%;
+}
