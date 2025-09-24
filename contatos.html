@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Sumana:wght@400;700&family=Alata&display=swap" rel="stylesheet">
     <link rel="icon" href="img/favicon.ico">
     <link rel="stylesheet" href="contatostyle.css">
+
 </head>
 <body class="pagina-contato">
     <section class="PrimeiroFundo">
@@ -42,12 +43,16 @@
             <form id="formulario">
                 <label>Nome:</label><br>
                 <input type="nome" id="nome" placeholder="Seu Nome" minlength="3" required><br><br>
-                <label>Email:</label><br>
+
+                <label for="email">Email:</label><br>
                 <input type="email" id="email" placeholder="seuemail@dominio.com" required><br><br>
-                <label>Telefone:</label><br>
+
+                <label for="telefone">Telefone:</label><br>
                 <input type="tel" id="telefone" placeholder="(XX) XXXXX-XXXX" maxlength="15" required><br><br>
-                <label>Sua mensagem:</label><br>
+
+                <label for="mensagem">Sua mensagem:</label><br>
                 <textarea id="mensagem" name="mensagem" placeholder="Digite sua mensagem aqui" rows="6" required></textarea><br><br>
+                
                 <button type="submit">Enviar</button>
             </form>
         </div>
@@ -86,5 +91,6 @@
             <p>&copy; 2025 Voluncheer. Todos os direitos reservados.</p>
         </div>
     </footer>
+    <script src="contatosjs.js"></script>
 </body>
 </html>
