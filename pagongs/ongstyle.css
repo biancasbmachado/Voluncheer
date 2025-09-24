@@ -403,4 +403,8 @@ footer{
   .headerONG nav{
     padding-right: 150px;
   }
+
+  article img{
+    padding-right: 10px;
+  }
 }
