@@ -7,102 +7,141 @@
   <link rel="stylesheet" href="stylelog.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
-  <link rel=""icon" href="img/favicon.ico">
-
+  <link rel="icon" href="img/favicon.ico">
 </head>
 <body>
-  <body>
-    <div class="tabs-container">
-      <div class="tab-buttons">
-        <button class="tab-btn active" data-tab="ong">Cadastro para ONGs</button>
-        <button class="tab-btn" data-tab="voluntario">Cadastro para Voluntários</button>
-      </div>
-  
-      <div class="tab-content active" id="ong">
-        <div class="card">
-          <h2>Cadastro para ONGs</h2>
-          <p>Conecte sua ONG a pessoas prontas para fazer a diferença.</p>
-          <form>
-            <input type="text" placeholder="Nome da ONG" required />
-            <input type="email" placeholder="Email institucional" required />
-            <input type="password" placeholder="Senha" required />
-            <button type="submit">Cadastrar ONG</button>
-          </form>
-        </div>
-      </div>
-  
-      <div class="tab-content" id="voluntario">
-        <div class="card">
-          <h2>Cadastro para Voluntários</h2>
-          <p>Junte-se a projetos e faça a diferença!</p>
-          <form>
-            <input type="text" placeholder="Seu nome" required />
-            <input type="email" placeholder="Seu email" required />
-            <input type="password" placeholder="Senha" required />
-            <button type="submit">Cadastrar Voluntário</button>
-          </form>
-        </div>
+  <div class="tabs-container">
+    <div class="tab-buttons">
+      <button class="tab-btn active" data-tab="ong">Cadastro para ONGs</button>
+      <button class="tab-btn" data-tab="voluntario">Cadastro para Voluntários</button>
+    </div>
+
+    <div class="tab-content active" id="ong">
+      <div class="card">
+        <h2>Cadastro para ONGs</h2>
+        <p>Conecte sua ONG a pessoas prontas para fazer a diferença.</p>
+        <form id="formOng">
+          <input type="text" placeholder="Nome da ONG (exibição)" required />
+
+          <input id="cnpj" type="text"
+                 maxlength="18"
+                 placeholder="CNPJ (00.000.000/0001-00)"
+                 pattern="^\d{2}\.\d{3}\.\d{3}/\d{4}-\d{2}$"
+                 title="Formato: 00.000.000/0001-00"
+                 required />
+
+          <input id="telefone" type="tel"
+                 maxlength="15"
+                 placeholder="Telefone / WhatsApp (ex.: (99) 99999-9999)"
+                 pattern="^\(?\d{2}\)?\s?\d{4,5}-\d{4}$"
+                 title="Formato: (99) 99999-9999 ou (99) 9999-9999"
+                 required />
+
+          <input type="text" placeholder="Cidade / Estado" required />
+          <input type="text" placeholder="Área de atuação (ex.: Educação, Saúde)" required />
+          <input type="url" placeholder="Site oficial ou Redes sociais" />
+          <textarea placeholder="Descrição curta da ONG (missão ou objetivo)" rows="3" required></textarea>
+
+          <label class="checkbox-label">
+            <input type="checkbox" required />
+            Sou um representante autorizado da ONG
+          </label>
+
+          <label class="upload-label">
+            Documento de comprovação (estatuto, certificado):
+            <input type="file" accept=".pdf,.jpg,.jpeg,.png" />
+          </label>
+
+          <input type="email" placeholder="Email institucional" required />
+          <input type="password" placeholder="Senha" required />
+          <button type="submit">Cadastrar ONG</button>
+        </form>
       </div>
     </div>
 
-    <div id="popup" class="popup hidden">
-      <div class="popup-content">
-        <h3>Cadastro realizado com sucesso!</h3>
-        <p>Bem-vindo(a) à plataforma!</p>
-        <button onclick="closePopup()">Fechar</button>
+    <div class="tab-content" id="voluntario">
+      <div class="card">
+        <h2>Cadastro para Voluntários</h2>
+        <p>Junte-se a projetos e faça a diferença!</p>
+        <form>
+          <input type="text" placeholder="Seu nome" required />
+          <input type="email" placeholder="Seu email" required />
+          <input type="password" placeholder="Senha" required />
+          <button type="submit">Cadastrar Voluntário</button>
+        </form>
       </div>
     </div>
-  
-    <script>
-      const buttons = document.querySelectorAll('.tab-btn');
-      const contents = document.querySelectorAll('.tab-content');
-    
-      buttons.forEach(btn => {
-        btn.addEventListener('click', () => {
-          buttons.forEach(b => b.classList.remove('active'));
-          contents.forEach(c => c.classList.remove('active'));
-    
-          btn.classList.add('active');
-          document.getElementById(btn.dataset.tab).classList.add('active');
-        });
-      });
-    
-      const emailRegex = /[^@ \t\r\n]+@[^@ \t\r\n]+\.[^@ \t\r\n]+/;
-      const senhaRegex = /^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$ %^&*-]).{8,}$/;
-    
-      const forms = document.querySelectorAll("form");
-      forms.forEach(form => {
-        form.addEventListener("submit", function(e) {
-          e.preventDefault();
-    
-          const emailInput = form.querySelector('input[type="email"]');
-          const senhaInput = form.querySelector('input[type="password"]');
-          const email = emailInput.value;
-          const senha = senhaInput.value;
-    
-          if (!emailRegex.test(email)) {
-            alert("Por favor, insira um e-mail válido.");
-            emailInput.focus();
-            return;
-          }
-    
-          if (!senhaRegex.test(senha)) {
-            alert("A senha deve conter no mínimo 8 caracteres, incluindo letra maiúscula, minúscula, número e caractere especial.");
-            senhaInput.focus();
-            return;
-          }
-    
-          document.getElementById("popup").classList.remove("hidden");
-        });
-      });
-    
-      function closePopup() {
-        document.getElementById("popup").classList.add("hidden");
-      }
-    </script>
-    
-    
+  </div>
 
-  </body>
-  
+  <div id="popup" class="popup hidden">
+    <div class="popup-content">
+      <h3>Cadastro realizado com sucesso!</h3>
+      <p>Bem-vindo(a) à plataforma!</p>
+      <button onclick="closePopup()">Fechar</button>
+    </div>
+  </div>
 
+  <script>
+    const buttons = document.querySelectorAll('.tab-btn');
+    const contents = document.querySelectorAll('.tab-content');
+
+    buttons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        buttons.forEach(b => b.classList.remove('active'));
+        contents.forEach(c => c.classList.remove('active'));
+
+        btn.classList.add('active');
+        document.getElementById(btn.dataset.tab).classList.add('active');
+      });
+    });
+
+    const emailRegex = /[^@ \t\r\n]+@[^@ \t\r\n]+\.[^@ \t\r\n]+/;
+    const senhaRegex = /^(?=.?[A-Z])(?=.?[a-z])(?=.?[0-9])(?=.?[#?!@$ %^&*-]).{8,}$/;
+
+    const forms = document.querySelectorAll("form");
+    forms.forEach(form => {
+      form.addEventListener("submit", function(e) {
+        e.preventDefault();
+
+        const emailInput = form.querySelector('input[type="email"]');
+        const senhaInput = form.querySelector('input[type="password"]');
+        if (emailInput && !emailRegex.test(emailInput.value)) {
+          alert("Por favor, insira um e-mail válido.");
+          emailInput.focus();
+          return;
+        }
+
+        if (senhaInput && !senhaRegex.test(senhaInput.value)) {
+          alert("A senha deve conter no mínimo 8 caracteres, incluindo letra maiúscula, minúscula, número e caractere especial.");
+          senhaInput.focus();
+          return;
+        }
+
+        document.getElementById("popup").classList.remove("hidden");
+      });
+    });
+
+    function closePopup() {
+      document.getElementById("popup").classList.add("hidden");
+    }
+
+    const cnpjInput = document.getElementById('cnpj');
+    cnpjInput.addEventListener('input', function(e){
+      let v = e.target.value.replace(/\D/g, ''); 
+      v = v.replace(/^(\d{2})(\d)/, '$1.$2');
+      v = v.replace(/^(\d{2})\.(\d{3})(\d)/, '$1.$2.$3');
+      v = v.replace(/\.(\d{3})(\d)/, '.$1/$2');
+      v = v.replace(/(\d{4})(\d)/, '$1-$2');
+      e.target.value = v;
+    });
+
+    const telInput = document.getElementById('telefone');
+    telInput.addEventListener('input', function(e){
+      let v = e.target.value.replace(/\D/g, ''); 
+      v = v.replace(/^(\d{2})(\d)/g, '($1) $2');
+      v = v.replace(/(\d{4,5})(\d{4})$/, '$1-$2');
+      e.target.value = v;
+    });
+  </script>
+</body>
+</html>
