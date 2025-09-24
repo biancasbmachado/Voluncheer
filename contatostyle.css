@@ -265,13 +265,19 @@ footer{
         padding: 0 15px;
     }
 
+    .titulo {
+        display: flex;
+        align-items: center;
+        justify-content: center; /* logo + login centralizados */
+        gap: 12px;
+    }
+
     .opcoes {
-        order: 3;
         flex-direction: column;
         width: 100%;
         align-items: center;
     }
-    
+
     .opcoes a {
         width: 80%;
     }
@@ -279,14 +285,6 @@ footer{
     .opcoes button {
         width: 100%;
         font-size: 16px;
-    }
-    
-    .titulo {
-        order: 1;
-    }
-
-    .perfil {
-        order: 2;
     }
 
     .texto-contato h2 {
@@ -303,3 +301,6 @@ footer{
         min-width: 100%;
     }
 }
+
+
+
