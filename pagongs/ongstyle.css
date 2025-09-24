@@ -4,22 +4,6 @@
   box-sizing: border-box;
 }
 
-.fundo{
-  position: absolute; 
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  z-index: 0;
-  pointer-events: none;  
-}
-
-.conteudo {
-  position: relative; 
-  z-index: 1; 
-}
-
 .perfil button{
   cursor: pointer;
   width: 50px;
@@ -34,45 +18,6 @@
   font-size: 35px;
 }
 
-.containerTexto {
-  width: 50%;
-  height: 100vh;
-  position: relative;
-  overflow: hidden;
-}
-
-.texto {
-  color: #fff;
-  position: absolute;
-  top: 40%;
-  left: 38%;
-  transform: translate(-50%, -50%);
-  font-size: 1.5vw;
-  max-width: 800px;
-  text-align: left;
-  word-wrap: break-word;
-  letter-spacing: 0px;
-  line-height: 100%;
-}
-
-.titulo {
-  display: flex;
-  align-items: baseline;
-  gap: 8px;
-  flex-wrap: wrap;
-}
-
-.SegundoFundo{
-  min-height: auto;
-  margin-bottom: 30px;
-  margin-top: 30px;
-}
-
-.fundo2{
-  background-color: rgb(255, 255, 255);
-  width: 100%;
-  height: auto;
-}
 .alata-regular {
   font-family: "Alata", sans-serif;
   font-weight: 400;
@@ -190,7 +135,6 @@ footer{
     justify-content: center;
     margin: 10px 0;
     width: 100%;
-    margin-top:1%;
 }
 
 .search-bar {
@@ -207,7 +151,6 @@ footer{
     border-radius: 8px 0 0 8px;
     outline: none;
     font-size: 1em;
-    height: 50px;
     width: 100%;
     box-sizing: border-box;
 }
@@ -234,66 +177,6 @@ footer{
     width: 20px;
     height: 20px;
     object-fit: contain;
-}
-
-.ImagensPag2 {
-    display: grid;
-    grid-template-columns: repeat(3, max-content);
-    column-gap: 0; 
-    row-gap: 10px; 
-    justify-content: center; 
-    padding: 0;
-}
-
-.ImagensPag2 a,
-.ImagensPag2 h3 a {
-    display: inline-block; 
-    color: black;
-    text-decoration: none;
-    font-family: "Sumana", serif;
-    font-weight: 400;
-    font-size: 1em;
-}
-
-.ImagensPag2 a:visited,
-.ImagensPag2 h3 a:visited {
-    color: black;
-    text-decoration: none;
-}
-
-.ImagensPag2 a:hover,
-.ImagensPag2 h3 a:hover {
-    text-decoration: underline;
-}
-
-.ong-item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    padding: 10px;
-    border-radius: 8px;
-    transition: background-color 0.3s ease;
-    height: 300px;
-}
-
-.ong-item img {
-    width: 280px; 
-    height: 220px; 
-    object-fit: cover;
-    border-radius: 8px;
-}
-
-.ong-item h3 {
-    margin-top: 4px;
-    font-family: "Alata", serif;
-    font-weight: 400;
-    font-size: 0.9em;
-    text-align: center;
-}
-
-.ong-item:hover {
-    background-color: #92ccf6;
 }
 
 .headerONG{
@@ -331,7 +214,14 @@ nav a{
 
 header div {
   display: flex;
+}
 
+main{
+  display:flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  padding: 10px 15px 25px 15px;
+  gap:10px;
 }
 
 
@@ -392,9 +282,8 @@ header div {
   font-family: "Alata", serif;
   font-size: 23px;
   font-style:normal;
-  margin-left: 2.5%;
-  margin-top: -3.5%;
   color: #0153d5;
+
 }
 
 .txteventos2{
@@ -402,19 +291,18 @@ header div {
   font-family: "Alata", serif;
   font-size: 14px;
   font-style:normal;
-  margin-left: 2.5%;
-  margin-bottom: -2%;
+
   color: grey;
 }
 
-.eventos-ongs {
+.eventos-ongs-conteudo {
     display: flex;
     flex-direction: column;
     gap: 16px; 
     width: 100%;
 }
 
-.eventos-ongs a {
+.eventos-ongs-conteudo a {
     text-decoration: none;
     color: inherit;
     display: block;
@@ -424,16 +312,13 @@ header div {
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin-left: 2.5%;
-    margin-top: 1%;
-    justify-content: flex-start;
     padding: 8px;
     border-radius: 8px;
     transition: background-color 0.3s ease;
     height: auto;
-    width: 95%;
     box-sizing: border-box;
     background-color: #f4f4f4;
+    text-decoration: none;
 }
 
 .eventos-ongs-item img {
@@ -441,15 +326,13 @@ header div {
     height: 100%;
     object-fit: cover;
     border-radius: 8px;
-    margin-right: 20px;
+
 }
 
 .eventos-ongs-item h3 {
     font-family: "Alata", serif;
     font-weight: bold;
-    font-size: 18px;
     text-transform: uppercase;
-    margin: 0;
     text-align: left;
     color: #4380dc;
 }
@@ -458,19 +341,10 @@ header div {
     font-family: "Alata", serif;
     font-weight: normal;
     font-size: 14px;
-    margin: 0;
     text-align: left;
     color: grey;
 }
 
 .eventos-ongs-item:hover {
     background-color: #92ccf6;
-}
-
-.footerongs {
-    position: relative;
-    width: 100%;
-    height: 150px;
-    overflow: hidden;
-    margin-top: 2.5%;
 }
