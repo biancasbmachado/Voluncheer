@@ -266,41 +266,41 @@ footer{
 .search-container {
     display: flex;
     justify-content: center;
-    margin: 10px 0;
     width: 100%;
-    margin-top:1%;
+    margin-top: 2%;
 }
 
 .search-bar {
     display: flex;
-    width: 100%;
+    align-items: center;
+    width: 90%;
     max-width: 500px;
-    box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
 }
 
 .search-bar input {
+    flex: 1;
     padding: 10px 15px;
-    border: 2px solid #4f83f1;
+    border: 1.5px solid #4f83f1;
     border-right: none;
     border-radius: 8px 0 0 8px;
     outline: none;
     font-size: 1em;
-    height: 50px;
-    width: 100%;
+    height: 45px;
     box-sizing: border-box;
 }
 
 .search-bar button {
-    height: 50px;
-    padding: 0 20px;
+    height: 45px;
+    padding: 0 18px;
     background-color: #4f83f1;
-    border: 2px solid #4f83f1;
+    border: 1.5px solid #4f83f1;
     border-left: none;
     border-radius: 0 8px 8px 0;
     cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: center;
+    width: auto;
 }
 
 .search-bar button:focus {
@@ -309,8 +309,8 @@ footer{
 }
 
 .lupa-icon {
-    width: 20px;
-    height: 20px;
+    width: 18px;
+    height: 18px;
     object-fit: contain;
 }
 
@@ -550,77 +550,283 @@ footer{
     margin-top: 2.5%;
 }
 
-/* responsividade parte da lilian */
-
 @media (max-width: 1024px) {
-  .ImagensPag2 {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-    padding: 0 20px;
-  }
+    .PrimeiroFundo nav {
+        padding: 1% 20px;
+    }
+    .opcoes {
+        gap: 15px;
+    }
 
-  .ong-item img {
-    width: 100%;
-    height: auto;
-  }
+    .texto {
+        font-size: 2vw; 
+    }
+    
+    .voluntarios {
+        width: 70%;
+    }
 
-  .ong-item {
-    height: auto;
-  }
-
-  .search-bar {
-    max-width: 400px;
-  }
+    .ImagensPag2 {
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 700px;
+    }
 }
 
 @media (max-width: 768px) {
-  .ImagensPag2 {
-    grid-template-columns: 1fr;
-    gap: 15px;
-    padding: 0 15px;
-  }
+    .PrimeiroFundo{
+        min-height: auto;
+        padding-bottom: 40px; 
+        background: linear-gradient(to left, #6faef7, #0153d5);
+    }
+    .fundo {
+        display: none;
+    }
 
-  .ong-item {
-    width: 100%;
-    height: auto;
-    padding: 15px;
-  }
+    .AzulEscuro, .AzulClaro {
+        width: 100%;
+        height: 100%;
+        background-image: none;
+    }
 
-  .ong-item img {
-    width: 100%;
-    height: auto;
-  }
+    .conteudo {
+        padding-top: 0;
+    }
 
-  .ong-item h3 {
-    font-size: 1em; 
-  }
+    .PrimeiroFundo nav {
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+        align-items: center;
+    }
+    
+    .PrimeiroFundo nav .titulo {
+        order: -1;
+        margin-bottom: 20px;
+        width: 100%;
+        text-align: center;
+    }
 
-  .search-bar {
-    flex-direction: row;
-    max-width: 90%;
-  }
+    .PrimeiroFundo nav .titulo img {
+        height: 50px;
+    }
 
-  .search-bar input {
-    font-size: 0.9em;
-    padding: 8px;
-  }
+    .opcoes {
+        flex-direction: column; 
+        align-items: center;
+        width: 80%;
+        max-width: 300px;
+        gap: 15px;
+    }
 
-  .search-bar button {
-    padding: 0 15px;
-  }
+    .opcoes button {
+        width: 100%;
+        font-size: 1.1rem;
+        padding: 12px 20px;
+    }
+    
+    .perfil {
+        display: none;
+    }
 
-  .lupa-icon {
-    width: 18px;
-    height: 18px;
-  }
+    .containerTexto {
+        width: 90%;
+        padding: 20px;
+        margin-top: 30px;
+    }
+
+    .texto {
+        font-size: 1.1rem; 
+        line-height: 1.5;
+    }
+    .texto h1 {
+        font-size: 1.8em;
+    }
+    .texto p {
+        font-size: 1em;
+    }
+
+    .voluntarios {
+        display: none;
+    }
+
+    .ImagensPag2 {
+        grid-template-columns: 1fr;
+        max-width: 320px; 
+    }
+
+    .footer-container {
+        flex-direction: column; 
+        text-align: center;
+    }
 }
 
 @media (max-width: 480px) {
-  .ong-item h3 {
-    font-size: 0.9em;
-  }
+    .texto h1 {
+        font-size: 1.5em;
+    }
+    .texto p {
+        font-size: 0.9em;
+    }
+    
+    .opcoes button {
+        font-size: 1rem;
+    }
 
-  .search-bar {
-    max-width: 100%;
-  }
+    .search-bar {
+        flex-direction: row;
+        max-width: 90%;
+    }
+
+    .search-bar input {
+        border-radius: 8px 0 0 8px;
+        border-right: none;
+    }
+
+    .search-bar button {
+        border-radius: 0 8px 8px 0;
+        border-left: none;
+        width: auto;
+    }
+
+    .footer-column h4 {
+        font-size: 1.1em;
+    }
+}
+
+@media (max-width: 1024px) {
+    .texto {
+        font-size: 1.8vw;
+    }
+    
+    .voluntarios {
+        width: 80vw; 
+    }
+
+        .ImagensPag2 {
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 700px;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .PrimeiroFundo{
+        min-height: auto; 
+        padding-bottom: 40px;
+        background: linear-gradient(to bottom, #0153d5, #6faef7); 
+        overflow: visible;
+    }
+
+    .fundo {
+        display: none;
+    }
+
+    .voluntarios {
+        display: none;
+    }
+
+    .PrimeiroFundo nav {
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+        align-items: center;
+    }
+
+    .PrimeiroFundo nav .titulo {
+        order: -1; 
+        margin-bottom: 20px;
+        justify-content: center;
+    }
+
+    .opcoes {
+        flex-direction: column; 
+        width: 80%;
+        max-width: 300px;
+        gap: 15px;
+        left: 0;
+    }
+
+    .opcoes button {
+        width: 100%;
+        font-size: 1.2rem;
+        padding: 12px 20px;
+    }
+    
+    .perfil {
+        display: none;
+    }
+
+    .containerTexto {
+        width: 100%;
+        padding: 0 20px;
+        margin-top: 30px;
+        height: auto;
+    }
+
+    .texto {
+        position: static;
+        transform: none;
+        font-size: 1rem;
+        text-align: center;
+        max-width: 100%;
+    }
+
+    .texto .titulo {
+        justify-content: center;
+    }
+
+    .texto h1 {
+        font-size: 2.2em;
+    }
+    
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .PrimeiroFundo nav .titulo img {
+        height: 40px;
+    }
+
+    .ImagensPag2 {
+        grid-template-columns: 1fr;
+        max-width: 320px;
+        margin: 0 auto;        
+        justify-items: center; 
+    }
+}
+
+@media (max-width: 480px) {
+    .texto h1 {
+        font-size: 1.8em;
+    }
+    
+    .opcoes button {
+        font-size: 1rem;
+    }
+
+    .search-bar {
+        flex-direction: row;
+        box-shadow: none;
+        max-width: 90%;
+    }
+
+    .search-bar input {
+        border-radius: 8px 8px 0 0;
+        border-right: 2px solid #4f83f1;
+        text-align: center;
+    }
+
+    .search-bar button {
+        border-radius: 0 0 8px 8px;
+        border-left: 2px solid #4f83f1;
+        width: 100%;
+    }
+
+    .ImagensPag2 {
+        grid-template-columns: 1fr;
+        max-width: 320px;
+        margin: 0 auto;
+        justify-items: center;
+    }
 }
