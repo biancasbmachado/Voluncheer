@@ -32,21 +32,22 @@
   width: 30%;
   height: 100%;
 }
+
 .voluntarios {
   position: absolute;
   bottom: 0;
   right: 0;
-  width: 68vw; 
-  height: auto;
+  width: 75vw;   
+  height: auto; 
   z-index: 1;
-  max-height: 100vh;
-  overflow: hidden;
+  overflow: visible;
 }
 
 .voluntarios img {
   width: 100%;
   height: auto;
-  display: block;
+  max-height: none;  
+  object-fit: contain;
 }
 
 .conteudo {
@@ -398,7 +399,6 @@ footer{
   color: #003c9e;
   text-decoration: underline;
 }
-
 
 .headerONG{
   background: linear-gradient(to left, #6faef7, #0153d5);
