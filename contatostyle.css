@@ -259,47 +259,51 @@ footer{
 }
 
 @media (max-width: 768px) {
-    nav {
-        flex-direction: column;
-        gap: 20px;
-        padding: 0 15px;
-    }
+nav {
+flex-direction: column;
+align-items: center; 
+gap: 25px; 
+padding: 20px 15px;
+}
 
-    .titulo {
-        display: flex;
-        align-items: center;
-        justify-content: center; /* logo + login centralizados */
-        gap: 12px;
-    }
+.titulo {
+display: flex;
+align-items: center;
+justify-content: center;
+gap: 12px;
+}
 
-    .opcoes {
-        flex-direction: column;
-        width: 100%;
-        align-items: center;
-    }
+.opcoes {
+flex-direction: column;
+width: 100%;
+align-items: center;
+gap: 15px; 
+}
 
-    .opcoes a {
-        width: 80%;
-    }
+.opcoes a {
+width: auto; 
+}
 
-    .opcoes button {
-        width: 100%;
-        font-size: 16px;
-    }
+.opcoes button {
+width: auto;
+padding: 10px 45px; 
+font-size: 16px;
+border-radius: 30px; 
+}
 
-    .texto-contato h2 {
-        font-size: 2em;
-    }
+.texto-contato h2 {
+font-size: 2em;
+}
 
-    .footer-container {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
+.footer-container {
+flex-direction: column;
+align-items: center;
+text-align: center;
+}
 
-    .footer-column {
-        min-width: 100%;
-    }
+.footer-column {
+min-width: 100%;
+}
 }
 
 
