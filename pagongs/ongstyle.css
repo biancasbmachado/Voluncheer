@@ -338,50 +338,91 @@ footer{
 }
 
 @media screen and (max-width:600px){
-  .headerONG img{
-    max-width: 150px;
+  .headerONG{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    gap: 20px;
   }
 
-  .perfil button{
-    max-width: 35px;
-    max-height: 35px;
-    font-size: 25px;
-  }  
+  .headerONG figure {
+    order: 1; 
+  }
+
+  .headerONG > div:first-of-type {
+    order: 2; 
+  }
+
+  .perfil {
+    order: 3; 
+  }
+
+  .headerONG img{
+    max-width: 180px;
+    height: auto;
+    margin-bottom: 10px;
+  }
 
   nav{
-    margin-right: 25px;
+    width: 100%;
+    margin-right: 0;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    padding: 0;
+  }
+
+  nav ul li{
+    padding: 10px 45px;
+    font-size: 16px;
+    text-align: center;
+    border-radius: 30px; 
   }
 
   nav a{
-    font-size: 6px;
+    font-size: 16px;
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+
+  .perfil button{
+    width: 60px;
+    height: 60px;
+    font-size: 30px;
+    margin-top: 20px;
   } 
 
-  article h3, a{
-      text-align: center;
-  }
+article h3, article a{
+  text-align: center;
+}
 
-  article h3{
-    padding-top: 15px;
-  }
+article h3{
+  padding-top: 15px;
+}
 
-  article a{
-    padding:0 15px 15px 15px;
-  }
+article a{
+  padding:0 15px 15px 15px;
+}
 
-  article{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-  }
+article{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
 
-  article img{
-    flex: 1 1 100%;
-    padding: 15px 15px 0 15px;
-  }
+article img{
+  flex: 1 1 100%;
+  padding: 15px 15px 0 15px;
+}
 
-  .search-container-ongs{
-    padding-left: 15px;
-    padding-right: 15px;
+.search-container-ongs{
+  padding-left: 15px;
+  padding-right: 15px;
   }
 }
 
@@ -408,3 +449,4 @@ footer{
     padding-right: 10px;
   }
 }
+
