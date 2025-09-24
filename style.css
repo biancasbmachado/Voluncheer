@@ -522,3 +522,78 @@ footer{
     overflow: hidden;
     margin-top: 2.5%;
 }
+
+/* responsividade parte da lilian */
+
+@media (max-width: 1024px) {
+  .ImagensPag2 {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 0 20px;
+  }
+
+  .ong-item img {
+    width: 100%;
+    height: auto;
+  }
+
+  .ong-item {
+    height: auto;
+  }
+
+  .search-bar {
+    max-width: 400px;
+  }
+}
+
+@media (max-width: 768px) {
+  .ImagensPag2 {
+    grid-template-columns: 1fr;
+    gap: 15px;
+    padding: 0 15px;
+  }
+
+  .ong-item {
+    width: 100%;
+    height: auto;
+    padding: 15px;
+  }
+
+  .ong-item img {
+    width: 100%;
+    height: auto;
+  }
+
+  .ong-item h3 {
+    font-size: 1em; 
+  }
+
+  .search-bar {
+    flex-direction: row;
+    max-width: 90%;
+  }
+
+  .search-bar input {
+    font-size: 0.9em;
+    padding: 8px;
+  }
+
+  .search-bar button {
+    padding: 0 15px;
+  }
+
+  .lupa-icon {
+    width: 18px;
+    height: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .ong-item h3 {
+    font-size: 0.9em;
+  }
+
+  .search-bar {
+    max-width: 100%;
+  }
+}
