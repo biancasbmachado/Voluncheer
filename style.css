@@ -301,6 +301,7 @@ footer{
     align-items: center;
     justify-content: center;
     width: auto;
+    box-sizing: border-box;
 }
 
 .search-bar button:focus {
@@ -806,21 +807,23 @@ footer{
     }
 
     .search-bar {
-        flex-direction: row;
-        box-shadow: none;
-        max-width: 90%;
+            flex-direction: row; /* Garante que os itens fiquem em linha */
+            box-shadow: none;
+            max-width: 90%;
     }
 
     .search-bar input {
-        border-radius: 8px 8px 0 0;
-        border-right: 2px solid #4f83f1;
-        text-align: center;
+            /* Ajustes para o layout horizontal */
+            border-radius: 8px 0 0 8px;
+            border-right: none; /* Remove a borda extra */
+            text-align: left;   /* Melhora a aparência do placeholder */
     }
 
     .search-bar button {
-        border-radius: 0 0 8px 8px;
-        border-left: 2px solid #4f83f1;
-        width: 100%;
+            /* Ajustes para o layout horizontal */
+            border-radius: 0 8px 8px 0;
+            border-left: none; /* Remove a borda extra */
+            width: auto;       /* << ESSA É A MUDANÇA PRINCIPAL */
     }
 
     .ImagensPag2 {
