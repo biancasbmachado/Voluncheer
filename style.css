@@ -807,23 +807,21 @@ footer{
     }
 
     .search-bar {
-            flex-direction: row; /* Garante que os itens fiquem em linha */
+            flex-direction: row; 
             box-shadow: none;
             max-width: 90%;
     }
 
     .search-bar input {
-            /* Ajustes para o layout horizontal */
             border-radius: 8px 0 0 8px;
-            border-right: none; /* Remove a borda extra */
-            text-align: left;   /* Melhora a aparência do placeholder */
+            border-right: none; 
+            text-align: left; 
     }
 
     .search-bar button {
-            /* Ajustes para o layout horizontal */
             border-radius: 0 8px 8px 0;
-            border-left: none; /* Remove a borda extra */
-            width: auto;       /* << ESSA É A MUDANÇA PRINCIPAL */
+            border-left: none;
+            width: auto;       
     }
 
     .ImagensPag2 {
