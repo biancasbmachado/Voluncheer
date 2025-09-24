@@ -158,7 +158,7 @@ form button[type="submit"]:hover {
     background-color: #1e4a9c;
 }
 
-footer {
+footer{
     background-image: url('img/footer.jpg');
     background-size: cover;
     background-position: center;
@@ -166,22 +166,20 @@ footer {
     padding: 40px 20px 0;
     text-align: center;
     font-family: "Alata", sans-serif;
-    margin: 0;
-    border: none;
 }
 
 .footer-container {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    gap: 20px;
+    display: flex; 
+    justify-content: space-around; 
+    flex-wrap: wrap; 
+    gap: 20px; 
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 0 auto; 
 }
 
 .footer-column {
-    flex: 1;
-    min-width: 250px;
+    flex: 1; 
+    min-width: 250px; 
 }
 
 .footer-column h4 {
@@ -193,12 +191,12 @@ footer {
 
 .footer-column p {
     line-height: 1.5;
-    color: #CBCFF9;
-    font-size: 14px;
+    color:#CBCFF9 ;
+    size: 14px;
 }
 
 .footer-links {
-    list-style: none;
+    list-style: none; 
     padding: 0;
 }
 
@@ -209,13 +207,13 @@ footer {
 }
 
 .footer-links a:hover {
-    color: #FFFFFF;
+    color: #FFFFFF; 
     transform: scale(1.1);
 }
 
 .footer-links li a {
     color: #CBCFF9;
-    text-decoration: none;
+    text-decoration: none; 
     line-height: 2;
 }
 
@@ -224,17 +222,17 @@ footer {
 }
 
 .social-logos a {
-    margin: 0 10px;
+    margin: 0 10px; 
     text-decoration: none;
 }
 
 .social-logos a:hover img {
     opacity: 1;
-    transform: scale(1.15);
+    transform: scale(1.15); 
 }
 
 .social-logos img {
-    width: 32px;
+    width: 32px; 
     height: auto;
     opacity: 0.8;
 }
@@ -243,9 +241,9 @@ footer {
     flex-basis: 100%;
     text-align: center;
     padding: 20px;
-    margin-top: 0;
-    border-top: 1px solid rgba(255, 255, 255, 0.2);
-    font-size: 14px;
+    margin-top: 30px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2); 
+    font-size:14px;
 }
 
 @media (max-width: 992px) {
