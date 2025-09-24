@@ -344,14 +344,14 @@ footer{
 }
 
 .ong-item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    padding: 10px;
-    border-radius: 8px;
-    transition: background-color 0.3s ease;
-    height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 12px;
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: #fff;
 }
 
 .ong-item img {
@@ -370,8 +370,35 @@ footer{
 }
 
 .ong-item:hover {
-    background-color: #92ccf6;
+  background-color: #f0f6ff;
+  transform: translateY(-4px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
 }
+
+.ong-frase {
+  font-family: "Alata", sans-serif;
+  font-size: 0.85em;
+  color: #555;
+  text-align: center;
+  margin: 6px 0 2px;
+  line-height: 1.3;
+}
+
+.ong-saiba {
+  display: inline-block;
+  margin-top: 4px;
+  font-family: "Alata", sans-serif;
+  font-size: 0.9em;
+  font-weight: bold;
+  color: #0153d5;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+.ong-saiba:hover {
+  color: #003c9e;
+  text-decoration: underline;
+}
+
 
 .headerONG{
   background: linear-gradient(to left, #6faef7, #0153d5);
