@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contatos</title>
+    <title>Sobre</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Sumana:wght@400;700&family=Alata&display=swap" rel="stylesheet">
     <link rel="icon" href="img/favicon.ico">
-    <link rel="stylesheet" href="stylesobre.css">
+    <link rel="stylesheet" href="/Voluncheer/pagcontato/contatostyle.css">
 
 </head>
 <body class="pagina-contato">
@@ -21,14 +21,14 @@
         <nav>
             <div class="titulo">
                 <a href="index.html">
-                     <img src="img/testedois.png">
+                     <img src="/Voluncheer/img/testedois.png">
                 </a>
             </div>
         <div class="opcoes">
-            <a href="./index.html"><button class="sumana-regular">HOME</button></a>
-            <a href="./sobre.html"><button class="sumana-regular">SOBRE</button></a>
-            <a href="pagongs/ongs.html"><button class="sumana-regular">ONG'S</button></a>
-            <a href="./contatos.html"><button class="sumana-regular">CONTATO</button></a>
+            <a href="/Voluncheer/index.html"><button class="sumana-regular">HOME</button></a>
+            <a href="/Voluncheer/pagsobre/sobre.html"><button class="sumana-regular">SOBRE</button></a>
+            <a href="/Voluncheer/pagongs/ongs.html"><button class="sumana-regular">ONG'S</button></a>
+            <a href="/Voluncheer/pagcontato/contatos.html"><button class="sumana-regular">CONTATO</button></a>
         </div>
         <div class="perfil">
             <a href="login/login.html">
@@ -39,25 +39,40 @@
     </div>
     </section>
     <main>
-        <div class="texto-contato">
-            <h2>Fale conosco!</h2>
-            <p>Sua opinião é muito importante para nós! Seja para tirar uma dúvida, fazer um elogio, enviar uma sugestão ou resolver qualquer questão, estamos à sua disposição.</p>
-            <form id="formulario">
-                <label>Nome:</label><br>
-                <input type="nome" id="nome" placeholder="Seu Nome" minlength="3" required><br><br>
-
-                <label for="email">Email:</label><br>
-                <input type="email" id="email" placeholder="seuemail@dominio.com" required><br><br>
-
-                <label for="telefone">Telefone:</label><br>
-                <input type="tel" id="telefone" placeholder="(XX) XXXXX-XXXX" maxlength="15" required><br><br>
-
-                <label for="mensagem">Sua mensagem:</label><br>
-                <textarea id="mensagem" name="mensagem" placeholder="Digite sua mensagem aqui" rows="6" required></textarea><br><br>
-                
-                <button type="submit">Enviar</button>
-            </form>
-        </div>
+        <section class="sobre">
+            <h2 class="titulo-sobre">
+                Sobre o Projeto
+            </h2>
+            <p class="texto-sobre">
+                O VolunCheer é uma plataforma de inovação social desenvolvida com o propósito de democratizar o acesso ao voluntariado no Brasil. O projeto busca conectar pessoas dispostas a ajudar com organizações que realmente precisam de apoio, promovendo a cidadania ativa e fortalecendo a cultura da solidariedade.
+                <br>
+                A ideia surgiu da constatação de que muitas pessoas desejam atuar como voluntárias, mas enfrentam dificuldades para encontrar informações confiáveis sobre ONGs e oportunidades. Diante desse cenário, o VolunCheer foi criado como uma ponte entre voluntários e instituições, oferecendo um ambiente digital acessível, intuitivo e seguro.
+            </p>
+            <h2 class="titulo-metodologia">
+                Metodologia
+            </h2>
+            <p class="texto-metodologia">
+                O desenvolvimento do VolunCheer foi guiado pela metodologia Design Thinking, que valoriza a empatia e o foco nas necessidades do usuário. O processo contou com cinco etapas: Empatia, Definir, Idear, Prototipar e Testar.
+                <br>
+                Durante a fase de empatia, uma pesquisa revelou os principais desafios dos interessados em ações sociais — entre eles, a falta de informações centralizadas e a insegurança ao procurar ONGs confiáveis. A partir desses dados, foram idealizadas funcionalidades como filtros por área de interesse, geolocalização, perfis detalhados de ONGs e canais diretos de contato. O protótipo foi desenvolvido no Figma, priorizando acessibilidade, padronização visual e usabilidade.
+            </p>
+            <h2 class="titulo-Desenvolvimento-e-Resultados">
+                Desenvolvimento e Resultados
+            </h2>
+            <p class="texto-Desenvolvimento-e-Resultados">
+                Atualmente, o projeto encontra-se em fase de desenvolvimento, migrando do protótipo para uma versão funcional construída com HTML, CSS e JavaScript. Essa etapa tem como foco aprimorar a usabilidade e garantir que a plataforma seja responsiva e compatível com diferentes dispositivos.
+                <br>
+                Os próximos passos incluem testes com usuários reais para coleta de feedbacks, ajustes de interface e integração de novas tecnologias — como sistemas de cadastro, filtros por localização e áreas de atuação. O objetivo é garantir uma experiência completa e eficiente para todos os usuários.
+            </p>
+            <h2 class="titulo-Impacto-e-Conclusão">
+                Impacto e Conclusão
+            </h2>
+            <p class="texto-Impacto-e-Conclusão">
+                O VolunCheer representa uma ferramenta inovadora e socialmente relevante, capaz de transformar a forma como o voluntariado é praticado no país. Mais do que conectar pessoas a causas, o projeto estimula o engajamento comunitário, a empatia e o senso de responsabilidade social.
+                <br>
+                Ao oferecer uma plataforma acessível e confiável, o VolunCheer contribui para a construção de uma sociedade mais colaborativa e solidária, onde a tecnologia serve como aliada na promoção do bem comum e na ampliação da participação cidadã.  
+            </p>
+        </section>
     </main>
     <footer>
         <section class="footer-container">
@@ -78,13 +93,13 @@
                 <h4>Siga-nos</h4>
                 <div class="social-logos">
                     <a href="https://www.facebook.com/?locale=pt_BR" target="_blank" rel="noopener noreferrer" aria-label="Visite nosso Facebook">
-                        <img src="img/face.png" alt="Logo do Facebook">
+                        <img src="/Voluncheer/img/face.png" alt="Logo do Facebook">
                     </a>
                     <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer" aria-label="Visite nosso YouTube">
-                        <img src="img/yt.png" alt="Logo do YouTube">
+                        <img src="/Voluncheer/img/yt.png" alt="Logo do YouTube">
                     </a>
                     <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Visite nosso Instagram">
-                        <img src="img/insta.png" alt="Logo do Instagram">
+                        <img src="/Voluncheer/img/insta.png" alt="Logo do Instagram">
                     </a>
                 </div>
             </div>
@@ -93,6 +108,6 @@
             <p>&copy; 2025 Voluncheer. Todos os direitos reservados.</p>
         </div>
     </footer>
-    <script src="contatosjs.js"></script>
+    <script src="/Voluncheer/pagcontato/contatosjs.js"></script>
 </body>
 </html>
