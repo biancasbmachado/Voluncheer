@@ -12,7 +12,7 @@ html, body {
 
 .PrimeiroFundo {
     background: linear-gradient(to left, #6faef7, #0153d5);
-    background-image: url('img/fundoONG.png');
+    background-image: url('/Voluncheer/img/fundoONG.png');
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
@@ -89,77 +89,151 @@ nav {
 main {
     display: flex;
     justify-content: center;
-    padding: 60px 20px;
+    padding: 30px 20px;
     background-color: #f9f9f9;
 }
 
-.texto-contato {
-    max-width: 600px;
-    width: 100%;
-    text-align: center;
+.titulo-sobre {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+    flex-direction: column;
 }
 
-.texto-contato h2 {
-    font-size: 2.5em;
-    color: #333;
+.titulo-sobre::after {
+    content: "";
+    display: block;
+    width: 100px;
+    height: 3px;
+    background-color: black;
+    margin: 10px auto 0;
     margin-bottom: 15px;
 }
 
-.texto-contato p {
-    font-size: 1.1em;
-    color: #666;
-    margin-bottom: 40px;
+.texto-sobre {
+    text-align: center;       
+    max-width: 1200px;         
+    margin: 0 auto;           
     line-height: 1.6;
+    font-size: 23px;
+    color: #000;
+    margin-bottom: 50px;
 }
 
-form {
-    text-align: left;
+.titulo-reconhecimentos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+    flex-direction: column;
 }
 
-form label {
-    font-weight: bold;
-    color: #444;
-    margin-bottom: 5px;
+.titulo-reconhecimentos::after {
+    content: "";
     display: block;
+    width: 100px;
+    height: 3px;
+    background-color: black;
+    margin: 10px auto 0;
+    margin-bottom: 25px;
 }
 
-form input[type="nome"],
-form input[type="email"],
-form input[type="tel"],
-form textarea {
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    font-size: 1em;
-    font-family: "Alata", sans-serif;
-    margin-bottom: 20px;
+.reconhecimentos-conteudo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    max-width: 1400px;
+    gap: 30px;
+    margin-bottom: 60px;
+    position: relative;
 }
 
-form textarea {
-    resize: vertical;
+.reconhecimentos-conteudo figure1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    text-align: center;   
 }
 
-form button[type="submit"] {
-    cursor: pointer;
-    width: 100%;
-    padding: 15px;
-    border: none;
-    border-radius: 8px;
-    background-color: #2859B6;
-    color: white;
-    font-size: 1.2em;
-    font-weight: bold;
-    font-family: "Alata", sans-serif;
-    transition: background-color 0.3s ease;
+.reconhecimentos-conteudo figure1 img {
+    max-width: 700px;
+    height: auto;
+    border-radius: 15px;  
 }
 
-form button[type="submit"]:hover {
-    background-color: #1e4a9c;
+.reconhecimentos-conteudo figure1 figcaption {
+    font-size: 16px;
+    color: #333;
+    margin-top: 10px;      
+    font-style: italic;    
+    text-align: center;
 }
 
-footer{
-    background-image: url('img/footer.jpg');
+.simposio-tudo {
+    display: flex;
+    flex-direction: column;
+}
+
+.simposio {
+    font-size: 28px;
+}
+
+.texto-reconhecimentos {
+    max-width: 700px;
+    font-size: 20px;
+    display: flex;
+    text-align:justify;
+}
+
+.reconhecimentos-conteudo-2 {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    max-width: 1400px;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.reconhecimentos-conteudo-2 figure2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    text-align: center;   
+}
+
+.reconhecimentos-conteudo-2 figure2 img {
+    max-width: 700px;
+    height: auto;
+    border-radius: 15px;  
+}
+
+.reconhecimentos-conteudo-2 figure2 figcaption {
+    font-size: 16px;
+    color: #333;
+    margin-top: 10px;      
+    font-style: italic;    
+    text-align: center;
+}
+
+.congrsso-tudo {
+    display: flex;
+    flex-direction: column;
+}
+
+.titulo-reconhecimentos-2 {
+    font-size: 28px;
+}
+
+.texto-reconhecimentos-2 {
+    max-width: 700px;
+    font-size: 20px;
+    display: flex;
+    text-align:justify;
+}
+
+footer {
+    background-image: url('/Voluncheer/img/footer.jpg');
     background-size: cover;
     background-position: center;
     color: white;
