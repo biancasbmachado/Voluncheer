@@ -12,7 +12,7 @@ html, body {
 
 .PrimeiroFundo {
     background: linear-gradient(to left, #6faef7, #0153d5);
-    background-image: url('img/fundoONG.png');
+    background-image: url('/Voluncheer/img/fundoONG.png');
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
@@ -159,7 +159,7 @@ form button[type="submit"]:hover {
 }
 
 footer{
-    background-image: url('img/footer.jpg');
+    background-image: url('/Voluncheer/img/footer.jpg');
     background-size: cover;
     background-position: center;
     color: white;

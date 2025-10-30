@@ -3,39 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sobre</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Contatos</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sumana:wght@400;700&family=Alata&display=swap" rel="stylesheet">
     <link rel="icon" href="img/favicon.ico">
+    <link rel="stylesheet" href="stylesobre.css">
+
 </head>
-<body>
-    <header>
-        <section class="PrimeiroFundo">
-            <div class="fundo">
-            <div class="headerONG"></div>
-            </div>
-            <div class="conteudo">
-            <nav>
-                <div class="titulo">
-                    <a href="index.html">
-                        <img src="img/testedois.png">
-                    </a>
-                </div>
-                <div class="opcoes">
-                <a href="./index.html"><button class="sumana-regular">HOME</button></a>
-                <a href="./sobre.html"><button class="sumana-regular">SOBRE</button></a>
-                <a href="pagongs/ongs.html"><button class="sumana-regular">ONG'S</button></a>
-                <a href="./contatos.html"><button class="sumana-regular">CONTATO</button></a>
-                </div>
-                <div class="perfil">
-                <a href="login/login.html">
-                    <button><i class="bi bi-person"></i></button>
+<body class="pagina-contato">
+    <section class="PrimeiroFundo">
+    <div class="fundo">
+        <div class="headerONG"></div>
+    </div>
+    <div class="conteudo">
+        <nav>
+            <div class="titulo">
+                <a href="index.html">
+                     <img src="img/testedois.png">
                 </a>
-                </div>
-            </nav>
             </div>
-        </section>
-    </header>
+        <div class="opcoes">
+            <a href="./index.html"><button class="sumana-regular">HOME</button></a>
+            <a href="./sobre.html"><button class="sumana-regular">SOBRE</button></a>
+            <a href="pagongs/ongs.html"><button class="sumana-regular">ONG'S</button></a>
+            <a href="./contatos.html"><button class="sumana-regular">CONTATO</button></a>
+        </div>
+        <div class="perfil">
+            <a href="login/login.html">
+            <button><i class="bi bi-person"></i></button>
+            </a>
+        </div>
+        </nav>
+    </div>
+    </section>
+    <main>
+        <div class="texto-contato">
+            <h2>Fale conosco!</h2>
+            <p>Sua opinião é muito importante para nós! Seja para tirar uma dúvida, fazer um elogio, enviar uma sugestão ou resolver qualquer questão, estamos à sua disposição.</p>
+            <form id="formulario">
+                <label>Nome:</label><br>
+                <input type="nome" id="nome" placeholder="Seu Nome" minlength="3" required><br><br>
+
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" placeholder="seuemail@dominio.com" required><br><br>
+
+                <label for="telefone">Telefone:</label><br>
+                <input type="tel" id="telefone" placeholder="(XX) XXXXX-XXXX" maxlength="15" required><br><br>
+
+                <label for="mensagem">Sua mensagem:</label><br>
+                <textarea id="mensagem" name="mensagem" placeholder="Digite sua mensagem aqui" rows="6" required></textarea><br><br>
+                
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </main>
     <footer>
         <section class="footer-container">
             <div class="footer-column">
@@ -45,10 +68,10 @@
             <div class="footer-column">
                 <h4>Navegação</h4>
                 <ul class="footer-links">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="sobre.html">Sobre</a></li>
-                    <li><a href="ongs.html">ONG's</a></li>
-                    <li><a href="contatos.html">Contato</a></li>
+                    <li><a href="/Voluncheer/index.html">Home</a></li>
+                    <li><a href="/Voluncheer/pagsobre/sobre.html">Sobre</a></li>
+                    <li><a href="/Voluncheer/pagongs/ongs.html">ONG's</a></li>
+                    <li><a href="/Voluncheer/pagcontato/contatos.html">Contato</a></li>
                 </ul>
             </div>
             <div class="footer-column">
@@ -67,8 +90,9 @@
             </div>
         </section>
         <div class="footer-bottom">
-                <p>&copy; 2025 Voluncheer. Todos os direitos reservados.</p>
+            <p>&copy; 2025 Voluncheer. Todos os direitos reservados.</p>
         </div>
     </footer>
+    <script src="contatosjs.js"></script>
 </body>
 </html>
