@@ -319,3 +319,145 @@ footer {
     border-top: 1px solid rgba(255, 255, 255, 0.2); 
     font-size:14px;
 }
+
+@media (max-width: 1024px) {
+    .opcoes {
+        left: 0; 
+        gap: 2%;
+        justify-content: center;
+        flex-grow: 1; 
+    }
+
+    .opcoes button {
+        font-size: 1.2vw; 
+        padding: 1vh 0.8vw;
+    }
+
+    .reconhecimentos-conteudo,
+    .reconhecimentos-conteudo-2 {
+        flex-direction: column; 
+        align-items: center;    
+        max-width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .reconhecimentos-conteudo figure1 img,
+    .reconhecimentos-conteudo-2 figure2 img {
+        width: 100%; 
+        max-width: 600px; 
+        height: auto;     
+    }
+
+    .texto-reconhecimentos,
+    .texto-reconhecimentos-2 {
+        max-width: 100%; 
+        text-align: left; 
+    }
+
+    .simposio-tudo,
+    .congrsso-tudo {
+        align-items: center; 
+    }
+}
+
+@media (max-width: 768px) {
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding: 0 15px 15px;
+    }
+
+    .perfil {
+        position: absolute;
+        top: 15px;
+        right: 15px;
+    }
+
+    .PrimeiroFundo {
+        padding-top: 70px; 
+    }
+
+    .titulo {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .opcoes {
+        flex-direction: column; 
+        width: 80%;
+        gap: 10px;
+    }
+
+    .opcoes button {
+        width: 100%;
+        font-size: 16px; 
+        padding: 10px 15px;
+    }
+
+    .titulo-sobre,
+    .titulo-reconhecimentos {
+        font-size: 28px;
+    }
+
+    .texto-sobre {
+        font-size: 18px;
+    }
+
+    .simposio,
+    .titulo-reconhecimentos-2 {
+        font-size: 24px;
+    }
+
+    .texto-reconhecimentos,
+    .texto-reconhecimentos-2 {
+        font-size: 16px;
+    }
+
+    main {
+        padding: 20px 10px;
+    }
+
+    .reconhecimentos-conteudo,
+    .reconhecimentos-conteudo-2 {
+        max-width: 100%; 
+        gap: 15px;
+        margin-bottom: 30px;
+    }
+
+    .footer-column {
+        text-align: center;
+    }
+
+    .footer-links {
+        padding: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .opcoes {
+        width: 95%;
+    }
+
+    .perfil button {
+        width: 40px;
+        height: 40px;
+        font-size: 28px;
+    }
+
+    .titulo-sobre,
+    .titulo-reconhecimentos {
+        font-size: 24px;
+    }
+
+    .texto-sobre {
+        font-size: 16px;
+    }
+
+    .simposio,
+    .titulo-reconhecimentos-2 {
+        font-size: 20px;
+    }
+}
