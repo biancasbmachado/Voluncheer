@@ -48,7 +48,6 @@ main{
   gap: 15px
 }
 
-
 .eventos{
   gap:10px;
 }
@@ -224,7 +223,6 @@ article img {
     height: 100%;
     object-fit: cover;
     border-radius: 8px;
-
 }
 
 .eventos-ongs-item h3 {
@@ -292,8 +290,6 @@ footer{
     padding: 0 40px;
 }
 
-/* BLOCO ESQUERDO – LOGO */
-
 .logo-voluncheer {
     flex: 1;
 }
@@ -303,32 +299,33 @@ footer{
     height: auto;
 }
 
-/*REDES SOCIAIS*/
-
 .social-logos {
     flex: 1;
     text-align: center;
 }
+
 .social-logos a {
     margin: 0 10px;
     text-decoration: none;
 }
+
 .social-logos i {
     font-size: 32px;
     color: #1C2567;
     opacity: 0.8;
     transition: 0.3s ease;
 }
+
 .social-logos i:hover {
     opacity: 1;
     transform: scale(1.15);
 }
 
-/* BLOCO DIREITO – MENU */
 .footer-column {
     flex: 1;
     text-align: right;
 }
+
 .footer-column h4 {
   color:  #1C2567;
 }
@@ -358,12 +355,28 @@ footer{
     border-top: 1.3px solid rgba(255, 255, 255, 0.2); 
     font-size:14px;
 }
+
 .logo-voluncheer img {
     width: 320px;
     height: auto;
 }
 
-@media screen and (max-width:600px){
+.carousel-desktop {
+    display: block;
+}
+
+.carousel-mobile {
+    display: none;
+}
+
+.banner-mobile {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+}
+
+@media screen and (max-width:768px){
   .headerclass{
     flex-direction: column;
     justify-content: center;
@@ -446,13 +459,13 @@ footer{
     padding: 15px 15px 0 15px;
   }
   
-  /*parte do slide*/
   .search-container-ongs{
     padding-left: 15px;
     padding-right: 15px;
   }
+
   .header-slider {
-    height: 40vh; /*muda a altura dele, o vh é viewport height, que se adapta ao tamanho da tela.*/
+    height: 40vh;
   }
 
   .slider-track {
@@ -469,10 +482,17 @@ footer{
     object-fit: cover;
     display: block;
   }
+
+  .carousel-desktop {
+    display: none !important;
+  }
+
+  .carousel-mobile {
+    display: block !important;
+  }
 }
 
-
-@media screen and (min-width:601px) and (max-width:900px) {
+@media screen and (min-width:769px) and (max-width:900px) {
   article img{
     padding-right: 10px;
   }
@@ -501,4 +521,3 @@ footer{
     padding-left: 10px;
   }
 }
-
