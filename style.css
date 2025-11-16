@@ -17,7 +17,7 @@ nav ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 20px;;
+  gap: 20px;
 }
 
 nav ul li{
@@ -385,7 +385,7 @@ footer{
   }
 
   .headerclass img{
-    max-width: 220px; 
+    max-width: 250px; 
     height: auto;
     margin-bottom: 5px; 
   }
@@ -489,7 +489,7 @@ footer{
 @media screen and (min-width:901px) {
   .headerclass nav{
     padding-right: 150px;
-    margin-top: 15px;
+    padding-top: 15px;
   }
 
   article img{

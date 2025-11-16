@@ -17,13 +17,12 @@ nav ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 5%;
+  gap: 20px;;
 }
 
 nav ul li{
   list-style: none;
-  background-color: #2859B6;
-  border: 1px solid #fff;
+  background-color: #72A2ED;
   border-radius: 20px;
   padding: 1vh 1vw;
   font-size: 0.8vw;
@@ -31,8 +30,8 @@ nav ul li{
 }
 
 nav a{
-  color: #fff;
-  font-family: "Sumana", serif;
+  color: #F9EFE4;
+  font-family: 'Poppins', sans-serif;
   text-align: center;
   text-decoration: none;
 }
@@ -359,7 +358,7 @@ footer{
   }
 
   .headerclass img{
-    max-width: 220px; 
+    max-width: 250px; 
     height: auto;
     margin-bottom: 5px; 
   }
@@ -463,6 +462,11 @@ footer{
 @media screen and (min-width:901px) {
   .headerclass nav{
     padding-right: 150px;
+    padding-top: 15px;
+  }
+
+  .headerclass img{
+    max-width: 250px; 
   }
 
   article img{
