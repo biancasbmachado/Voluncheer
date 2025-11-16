@@ -249,82 +249,77 @@ article img {
 }
 
 footer{
-    background-image: url('../img/footer.jpg');
+    background: #F9EFE4;
+    background: linear-gradient(90deg,rgba(249, 239, 228, 1) 0%, rgba(114, 162, 237, 1) 100%);
     background-size: cover;
     background-position: center;
     color: white;
-    padding: 40px 20px 0;
-    text-align: center;
+    padding: 40px 2%;
     font-family: "Alata", sans-serif;
 }
 
 .footer-container {
-    display: flex; 
-    justify-content: space-around; 
-    flex-wrap: wrap; 
-    gap: 20px; 
-    max-width: 1200px;
-    margin: 0 auto; 
+    display: flex;
+    align-items: center;
+    padding: 0 40px;
 }
 
+/* BLOCO ESQUERDO – LOGO */
+
+.logo-voluncheer {
+    flex: 1;
+}
+
+.logo-voluncheer img{
+    width: 320px;
+    height: auto;
+}
+
+/*REDES SOCIAIS*/
+
+.social-logos {
+    flex: 1;
+    text-align: center;
+}
+.social-logos a {
+    margin: 0 10px;
+    text-decoration: none;
+}
+.social-logos i {
+    font-size: 32px;
+    color: #1C2567;
+    opacity: 0.8;
+    transition: 0.3s ease;
+}
+.social-logos i:hover {
+    opacity: 1;
+    transform: scale(1.15);
+}
+
+/* BLOCO DIREITO – MENU */
 .footer-column {
-    flex: 1; 
-    min-width: 250px; 
+    flex: 1;
+    text-align: right;
 }
-
 .footer-column h4 {
-    margin-bottom: 15px;
-    text-transform: uppercase;
-    font-weight: bold;
-    font-size: larger;
-}
-
-.footer-column p {
-    line-height: 1.5;
-    color:#CBCFF9 ;
-    size: 14px;
+  color:  #1C2567;
 }
 
 .footer-links {
-    list-style: none; 
+    list-style: none;
     padding: 0;
 }
 
-.footer-links a {
-    color: #d1d1d1;
-    text-decoration: none;
-    transition: color 0.3s ease, transform 0.3s ease;
-}
-
-.footer-links a:hover {
-    color: #FFFFFF; 
-    transform: scale(1.1);
-}
-
 .footer-links li a {
-    color: #CBCFF9;
-    text-decoration: none; 
+    color: #2a3694;
+    text-decoration: none;
     line-height: 2;
+    transition: color 0.3s ease, transform 0.3s ease;
 }
 
 .footer-links li a:hover {
     text-decoration: underline;
-}
-
-.social-logos a {
-    margin: 0 10px; 
-    text-decoration: none;
-}
-
-.social-logos a:hover img {
-    opacity: 1;
-    transform: scale(1.15); 
-}
-
-.social-logos img {
-    width: 32px; 
-    height: auto;
-    opacity: 0.8;
+    transform: scale(1.05);
 }
 
 .footer-bottom {
@@ -332,8 +327,12 @@ footer{
     text-align: center;
     padding: 20px;
     margin-top: 30px;
-    border-top: 1px solid rgba(255, 255, 255, 0.2); 
+    border-top: 1.3px solid rgba(255, 255, 255, 0.2); 
     font-size:14px;
+}
+.logo-voluncheer img {
+    width: 320px;
+    height: auto;
 }
 
 @media screen and (max-width:600px){
@@ -466,7 +465,8 @@ footer{
   }
 
   .headerclass img{
-    max-width: 250px; 
+    max-width: 250px;
+    padding-left: 10px;
   }
 
   article img{
