@@ -4,6 +4,15 @@
   box-sizing: border-box;
 }
 
+html, body {
+  overflow-x: hidden;
+}
+
+.PrimeiroFundo {
+    width: 100%;
+    display: block;
+}
+
 .headerclass{
   background-color: #1C2567;
   display: flex;
@@ -153,7 +162,7 @@ html, body {
 }
 
 .slide {
-  width: 100vw;
+  width: 100%;
   height: 100%;
   position: relative;
   flex-shrink: 0;
@@ -213,7 +222,7 @@ article img {
     aspect-ratio: 4/3;
     object-fit: cover;
     border-radius: 12px;
-    display: block;
+    display: flex;
 }
 
 
@@ -486,6 +495,11 @@ footer{
   .footer-links {
     text-align: center;
   }
+
+  .ong-img{
+    width: 100%;
+    aspect-ratio: auto;
+  }
 }
 
 @media screen and (min-width:769px) and (max-width:900px) {
@@ -494,12 +508,25 @@ footer{
   }
 
   .headerclass li a{
-    font-size: 10px;
+    font-size: 14px;
+    padding: 5px;
   }
 
   .headerclass nav{
     padding-right: 80px;
+    padding-top: 15px;
   }
+
+  .headerclass img{
+    max-width: 220px; 
+    height: auto;
+  }
+
+  .ongs-grid {
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+  }
+
 }
 
 @media screen and (min-width:901px) {
