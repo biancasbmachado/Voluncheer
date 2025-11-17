@@ -9,6 +9,13 @@
         "button-name": "off",
         "link-name": "off"
       }
+    ],
+    "disown-opener": "off",
+    "axe/text-alternatives": [
+      "default",
+      {
+        "image-alt": "off"
+      }
     ]
   }
 }

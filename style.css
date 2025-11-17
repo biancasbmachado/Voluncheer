@@ -58,7 +58,7 @@ main{
   height: 50px;
   border-radius: 50%;
   background-color: #BDE4FF;
-  color: #4729E1;
+  color: #1C2567;
   border: none;
   display: flex;
   align-items: center;
@@ -97,9 +97,10 @@ html, body {
     box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
 }
 
+
 .search-bar input {
     padding: 10px 15px;
-    border: 2px solid #4f83f1;
+    border: 2px solid #72A2ED;
     border-right: none;
     border-radius: 8px 0 0 8px;
     outline: none;
@@ -111,8 +112,8 @@ html, body {
 .search-bar button {
     height: 50px;
     padding: 0 20px;
-    background-color: #4f83f1;
-    border: 2px solid #4f83f1;
+    background-color: #72A2ED;
+    border: 2px solid #72A2ED;
     border-left: none;
     border-radius: 0 8px 8px 0;
     cursor: pointer;
@@ -136,7 +137,7 @@ html, body {
     display: flex;
     justify-content: center;
     width: 100%;
-    padding-top: 15px;
+    margin-top: 25px;
 }
 
 .header-slider {
@@ -177,47 +178,6 @@ html, body {
   border-radius: 8px;
 }
 
-.txteventos{
-  text-align: left;
-  font-family: "Alata", serif;
-  font-size: 23px;
-  font-style:normal;
-  color: #0153d5;
-}
-
-.txteventos2{
-  text-align: left;
-  font-family: "Alata", serif;
-  font-size: 14px;
-  font-style:normal;
-  color: grey;
-}
-
-.eventos-ongs-conteudo {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-}
-
-.eventos-ongs-conteudo a {
-    text-decoration: none;
-    color: inherit;
-    display: block;
-}
-
-.eventos-ongs-item {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 8px;
-    border-radius: 8px;
-    transition: background-color 0.3s ease;
-    height: auto;
-    box-sizing: border-box;
-    background-color: #f4f4f4;
-    text-decoration: none;
-}
-
 article img {
     width: 150px; 
     height: 100%;
@@ -225,53 +185,62 @@ article img {
     border-radius: 8px;
 }
 
-.eventos-ongs-item h3 {
-    font-family: "Alata", serif;
-    font-weight: bold;
-    text-transform: uppercase;
-    text-align: left;
-    color: #4380dc;
-}
-
-.eventos-ongs-item h4 {
-    font-family: "Alata", serif;
-    font-weight: normal;
-    font-size: 14px;
-    text-align: left;
-    color: grey;
+.ongs-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    padding: 20px;
+    max-width: 1100px;
+    margin: 0 auto;
 }
 
 .ong-item {
     background-color: #fff;
     border-radius: 12px;
-    padding: 15px; 
+    padding: 5px;
     transition: 0.3s;
+    text-align: center;
+    padding: 15px;
 }
 
 .ong-item:hover {
-    background-color: #92ccf6;
+    background-color: #F9EFE4;
     transform: scale(1.03);
 }
 
-.ImagensPag2 .ong-item {
-    background: #fff;
-    padding: 15px;
-    border-radius: 12px;
-    text-align: center;
-}
-
 .ong-img {
-    width: 100%;
-    height: 220px;
-    border-radius: 12px;
+    width: 300px;
+    aspect-ratio: 4/3;
     object-fit: cover;
+    border-radius: 12px;
     display: block;
 }
 
-.ong-item img {
-    aspect-ratio: 4/3; 
-    width: 100%;
-    object-fit: cover;
+
+.ong-titulo a {
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    color: #AA846A;
+    text-decoration-line: underline;
+    text-decoration-color: #AA846A;
+    text-decoration-thickness: 1.5px;
+    text-underline-offset: 3px;
+}
+
+
+.ong-frase {
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    color: #555;
+    margin: 10px 10px;
+}
+
+.ong-saiba {
+    display: inline-block;
+    margin-top: 10px;
+    color: #AA846A;
+    text-decoration: none;
+    font-weight: bold;
 }
 
 footer{
