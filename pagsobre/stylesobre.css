@@ -1,6 +1,3 @@
-/* ========================================================= */
-/* ESTILOS BASE E RESET */
-/* ========================================================= */
 *{
   margin: 0;
   padding: 0;
@@ -16,9 +13,6 @@ html, body {
     display: block;
 }
 
-/* ========================================================= */
-/* ESTILOS DO HEADER (CABEÇALHO) 
-/* ========================================================= */
 .headerclass{
   background-color: #1C2567;
   display: flex;
@@ -26,10 +20,6 @@ html, body {
   position:relative;
   align-items: center;
   padding: 8px 8px;
-}
-
-header div {
-  display: flex;
 }
 
 nav ul {
@@ -55,6 +45,10 @@ nav a{
   text-decoration: none;
 }
 
+header div {
+  display: flex;
+}
+
 .perfil button{
   cursor: pointer;
   width: 50px;
@@ -69,13 +63,30 @@ nav a{
   font-size: 35px;
 }
 
-.opcoes {
-    display: flex;
+.alata-regular {
+  font-family: "Alata", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
-/* ========================================================= */
-/* ESTILOS DO MAIN (CONTEÚDO DA PÁGINA SOBRE) */
-/* ========================================================= */
+.sumana-regular {
+  font-family: "Sumana", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.sumana-bold {
+  font-family: "Sumana", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
 main {
   display: flex;
   justify-content: center;
@@ -227,158 +238,103 @@ main {
   text-align:justify;
 }
 
-/* ========================================================= */
-/* ESTILOS DO FOOTER (RODAPÉ) 
-/* ========================================================= */
 footer{
-  background: #F9EFE4;
-  background: linear-gradient(90deg,rgba(249, 239, 228, 1) 0%, rgba(114, 162, 237, 1) 100%);
-  background-size: cover;
-  background-position: center;
-  color: white;
-  padding: 20px 2%;
-  font-family: "Alata", sans-serif;
+    background: #F9EFE4;
+    background: linear-gradient(90deg,rgba(249, 239, 228, 1) 0%, rgba(114, 162, 237, 1) 100%);
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 20px 2%;
+    font-family: "Alata", sans-serif;
 }
 
 .footer-container {
-  display: flex;
-  align-items: center;
-  padding: 0 40px;
+    display: flex;
+    align-items: center;
+    padding: 0 40px;
 }
 
 .logo-voluncheer {
-  flex: 1;
+    flex: 1;
 }
 
 .logo-voluncheer img{
-  width: 320px;
-  height: auto;
+    width: 320px;
+    height: auto;
 }
 
 .social-logos {
-  flex: 1;
-  text-align: center;
+    flex: 1;
+    text-align: center;
 }
 
 .social-logos a {
-  margin: 0 10px;
-  text-decoration: none;
+    margin: 0 10px;
+    text-decoration: none;
 }
 
 .social-logos i {
-  font-size: 32px;
-  color: #1C2567;
-  opacity: 0.8;
-  transition: 0.3s ease;
+    font-size: 32px;
+    color: #1C2567;
+    opacity: 0.8;
+    transition: 0.3s ease;
 }
 
 .social-logos i:hover {
-  opacity: 1;
-  transform: scale(1.15);
+    opacity: 1;
+    transform: scale(1.15);
 }
 
 .footer-column {
-  flex: 1;
-  text-align: right;
-  margin-top: 10px;
+    flex: 1;
+    text-align: right;
+    margin-top: 10px;
 }
 
 .footer-column h4 {
   color:  #1C2567;
+
 }
 
 .footer-links {
-  list-style: none;
-  padding: 0;
+    list-style: none;
+    padding: 0;
 }
 
 .footer-links li a {
-  color: #2a3694;
-  text-decoration: none;
-  line-height: 2;
-  transition: color 0.3s ease, transform 0.3s ease;
+    color: #2a3694;
+    text-decoration: none;
+    line-height: 2;
+    transition: color 0.3s ease, transform 0.3s ease;
 }
 
 .footer-links li a:hover {
-  text-decoration: underline;
-  transform: scale(1.05);
+    text-decoration: underline;
+    transform: scale(1.05);
 }
 
 .footer-bottom {
-  flex-basis: 100%;
-  text-align: center;
-  padding: 20px;
-  margin-top: 30px;
-  border-top: 1.3px solid rgba(255, 255, 255, 0.2);
-  font-size:14px;
+    flex-basis: 100%;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+    border-top: 1.3px solid rgba(255, 255, 255, 0.2); 
+    font-size:14px;
 }
 
-
-/* ========================================================= */
-/* MEDIA QUERIES (RESPONSIVIDADE) - Unificado com a Home */
-/* ========================================================= */
-
-/* Para telas entre 901px e um pouco maiores */
-@media screen and (min-width:901px) {
-  /* Ajuste para telas grandes, garantindo que o logo não tenha padding extra e que o menu se distribua */
-  .headerclass img{
-    max-width: 250px;
-    padding-left: 0;
-  }
+.logo-voluncheer img {
+    width: 320px;
+    height: auto;
 }
 
-/* Para telas entre 769px e 900px */
-@media screen and (min-width:769px) and (max-width:1024px) {
-    /* Ajustes para a header */
-    .headerclass{
-        padding: 8px 20px;
-    }
-    nav ul li {
-        font-size: 1.2vw;
-    }
-    .titulo img {
-      max-width: 220px;
-    }
-
-    /* Ajustes de conteúdo */
-    .reconhecimentos-conteudo,
-    .reconhecimentos-conteudo-2 {
-        flex-direction: column;
-        align-items: center;
-        max-width: 90%;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    .reconhecimentos-conteudo figure1 img,
-    .reconhecimentos-conteudo-2 figure2 img {
-        width: 100%;
-        max-width: 600px;
-        height: auto;
-    }
-
-    .texto-reconhecimentos,
-    .texto-reconhecimentos-2 {
-        max-width: 100%;
-        text-align: left;
-    }
-
-    .simposio-tudo,
-    .congresso-tudo {
-        align-items: center;
-    }
-}
-
-/* Para telas até 768px (Tablets e Celulares) */
 @media screen and (max-width:768px){
 
-  /* Header em modo coluna, como na Home */
   .headerclass{
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 20px 0;
-    gap: 15px;
+    gap: 15px; 
   }
 
   .headerclass .titulo {
@@ -387,18 +343,21 @@ footer{
 
   nav {
     order: 1;
-    width: 100%;
   }
 
   .perfil {
     order: 2;
-    position: static; /* Volta para o fluxo normal */
   }
 
   .headerclass img{
-    max-width: 220px;
+    max-width: 220px; 
     height: auto;
     margin-bottom: 5px;
+  }
+
+  nav{
+    width: 100%;
+    margin-right: 0;
   }
 
   nav ul {
@@ -409,11 +368,10 @@ footer{
   }
 
   nav ul li{
-    padding: 8px 30px;
+    padding: 8px 30px; 
     font-size: 14px;
     text-align: center;
-    border-radius: 30px;
-    width: 80%; /* Ocupa mais largura */
+    border-radius: 30px; 
   }
 
   nav a{
@@ -424,57 +382,12 @@ footer{
   }
 
   .perfil button{
-    width: 45px;
+    width: 45px;  
     height: 45px;
     font-size: 22px;
     margin-bottom: 10px;
-  }
+  } 
 
-  /* Conteúdo */
-  .titulo-sobre,
-  .titulo-reconhecimentos {
-    font-size: 28px;
-  }
-
-  .texto-sobre {
-    font-size: 18px;
-  }
-
-  .simposio,
-  .titulo-reconhecimentos-2 {
-    font-size: 24px;
-  }
-
-  .texto-reconhecimentos,
-  .texto-reconhecimentos-2 {
-    font-size: 16px;
-  }
-
-  main {
-    padding: 20px 10px;
-  }
-
-  .reconhecimentos-conteudo,
-  .reconhecimentos-conteudo-2 {
-    flex-direction: column;
-    max-width: 100%;
-    gap: 15px;
-    margin-bottom: 30px;
-    padding: 0 15px;
-  }
-  
-  .reconhecimentos-conteudo figure1 img,
-  .reconhecimentos-conteudo-2 figure2 img {
-    width: 100%;
-    max-width: 450px; /* Limite para não estourar em telas muito pequenas */
-  }
-  
-  .texto-reconhecimentos,
-  .texto-reconhecimentos-2 {
-    text-align: justify;
-  }
-
-  /* Footer */
   .logo-voluncheer img {
     width: 250px;
   }
@@ -487,34 +400,244 @@ footer{
     gap: 20px;
   }
 
-  .footer-column {
+  .footer-links {
     text-align: center;
+  }
+
+}
+
+@media screen and (min-width:769px) and (max-width:900px) {
+  .headerclass li a{
+    font-size: 14px;
+    padding: 5px;
+  }
+
+  .headerclass nav{
+    padding-right: 80px;
+    padding-top: 15px;
+  }
+
+  .headerclass img{
+    max-width: 220px; 
+    height: auto;
+  }
+
+}
+
+@media screen and (min-width:901px) {
+  .headerclass nav{
+    padding-right: 150px;
+    padding-top: 15px;
+  }
+
+  article img{
+    padding-right: 10px;
+  }
+
+  .headerclass img{
+    max-width: 250px;
+    padding-left: 10px;
   }
 }
 
-/* Para telas menores que 480px (Smartphones pequenos) */
-@media (max-width: 480px) {
-  nav ul li {
-    width: 95%; /* Ocupa quase toda a largura */
+footer{
+    background: #F9EFE4;
+    background: linear-gradient(90deg,rgba(249, 239, 228, 1) 0%, rgba(114, 162, 237, 1) 100%);
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 20px 2%;
+    font-family: "Alata", sans-serif;
+}
+
+.footer-container {
+    display: flex;
+    align-items: center;
+    padding: 0 40px;
+}
+
+.logo-voluncheer {
+    flex: 1;
+}
+
+.logo-voluncheer img{
+    width: 320px;
+    height: auto;
+}
+
+.social-logos {
+    flex: 1;
+    text-align: center;
+}
+
+.social-logos a {
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.social-logos i {
+    font-size: 32px;
+    color: #1C2567;
+    opacity: 0.8;
+    transition: 0.3s ease;
+}
+
+.social-logos i:hover {
+    opacity: 1;
+    transform: scale(1.15);
+}
+
+.footer-column {
+    flex: 1;
+    text-align: right;
+    margin-top: 10px;
+}
+
+.footer-column h4 {
+  color:  #1C2567;
+
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li a {
+    color: #2a3694;
+    text-decoration: none;
+    line-height: 2;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.footer-links li a:hover {
+    text-decoration: underline;
+    transform: scale(1.05);
+}
+
+.footer-bottom {
+    flex-basis: 100%;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+    border-top: 1.3px solid rgba(255, 255, 255, 0.2); 
+    font-size:14px;
+}
+
+.logo-voluncheer img {
+    width: 320px;
+    height: auto;
+}
+
+@media screen and (max-width:768px){
+
+  .headerclass{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    gap: 15px; 
   }
 
-  .perfil button {
-    width: 40px;
-    height: 40px;
-    font-size: 28px;
+  .headerclass .titulo {
+    order: 0;
   }
 
-  .titulo-sobre,
-  .titulo-reconhecimentos {
-    font-size: 24px;
+  nav {
+    order: 1;
   }
 
-  .texto-sobre {
+  .perfil {
+    order: 2;
+  }
+
+  .headerclass img{
+    max-width: 220px; 
+    height: auto;
+    margin-bottom: 5px;
+  }
+
+  nav{
+    width: 100%;
+    margin-right: 0;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    padding: 0;
+  }
+
+  nav ul li{
+    padding: 8px 30px; 
+    font-size: 14px;
+    text-align: center;
+    border-radius: 30px; 
+  }
+
+  nav a{
     font-size: 16px;
+    display: block;
+    width: 100%;
+    height: 100%;
   }
 
-  .simposio,
-  .titulo-reconhecimentos-2 {
-    font-size: 20px;
+  .perfil button{
+    width: 45px;  
+    height: 45px;
+    font-size: 22px;
+    margin-bottom: 10px;
+  } 
+
+  .logo-voluncheer img {
+    width: 250px;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    gap: 20px;
+  }
+
+  .footer-links {
+    text-align: center;
+  }
+
+}
+
+@media screen and (min-width:769px) and (max-width:900px) {
+  .headerclass li a{
+    font-size: 14px;
+    padding: 5px;
+  }
+
+  .headerclass nav{
+    padding-right: 80px;
+    padding-top: 15px;
+  }
+
+  .headerclass img{
+    max-width: 220px; 
+    height: auto;
+  }
+
+}
+
+@media screen and (min-width:901px) {
+  .headerclass nav{
+    padding-right: 150px;
+    padding-top: 15px;
+  }
+
+  article img{
+    padding-right: 10px;
+  }
+
+  .headerclass img{
+    max-width: 250px;
+    padding-left: 10px;
   }
 }
