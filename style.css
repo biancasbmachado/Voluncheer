@@ -258,7 +258,7 @@ footer{
     background-size: cover;
     background-position: center;
     color: white;
-    padding: 40px 2%;
+    padding: 20px 2%;
     font-family: "Alata", sans-serif;
 }
 
@@ -302,10 +302,12 @@ footer{
 .footer-column {
     flex: 1;
     text-align: right;
+    margin-top: 10px;
 }
 
 .footer-column h4 {
   color:  #1C2567;
+
 }
 
 .footer-links {
