@@ -106,7 +106,6 @@ html, body {
     box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
 }
 
-
 .search-bar input {
     padding: 10px 15px;
     border: 2px solid #72A2ED;
@@ -225,7 +224,6 @@ article img {
     display: flex;
 }
 
-
 .ong-titulo a {
     font-family: "Poppins", sans-serif;
     font-size: 16px;
@@ -235,7 +233,6 @@ article img {
     text-decoration-thickness: 1.5px;
     text-underline-offset: 3px;
 }
-
 
 .ong-frase {
     font-family: "Poppins", sans-serif;
