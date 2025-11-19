@@ -1,96 +1,50 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-html, body {
-    margin: 0;
-    padding: 0;
-    font-family: "Alata", sans-serif;
+.headerclass{
+  background-color: #1C2567;
+  display: flex;
+  justify-content: space-between;
+  position:relative;
+  align-items: center;
+  padding: 8px 8px;
 }
 
-.PrimeiroFundo {
-    background: linear-gradient(to left, #6faef7, #0153d5);
-    background-image: url('/Voluncheer/img/fundoONG.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-    padding: 15px 0; 
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;;
 }
 
-.fundo, .headerONG {
-    display: none;
+nav ul li{
+  list-style: none;
+  background-color: #72A2ED;
+  border-radius: 20px;
+  padding: 1vh 1vw;
+  font-size: 0.8vw;
+  line-height: 1.2;
 }
 
-.conteudo {
-    position: relative;
-    z-index: 1;
+nav a{
+  color: #F9EFE4;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  text-decoration: none;
 }
 
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 25px 0 0;
-}
-
-.titulo {
-    display: flex;
-    align-items: baseline;
-    gap: 8px;
-    flex-wrap: wrap;
-}
-
-.opcoes{
-    display: flex;
-    gap: 5%;
-    position: relative;
-    left: -7%;
-}
-
-.opcoes button{
-    cursor: pointer;
-    background-color: #2859B6;
-    border: 1px solid #fff;
-    width: 100%;
-    min-width: 30%;
-    min-height: 30%;
-    padding: 1vh 1vw;
-    border-radius: 20px;
-    color: #fff;
-    font-family: "Sumana", serif;
-    font-size: 0.8vw;
-    line-height: 1.2;
-    white-space: nowrap;
-    text-align: center;
-    margin: 0.5%;
-}
-
-.perfil button {
-    cursor: pointer;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background-color: #BDE4FF;
-    color: #4729E1;
-    border: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 35px;
-    transition: all 0.2s ease-in-out;
-}
-
-.perfil button:hover {
-    transform: scale(1.1);
+header div {
+  display: flex;
 }
 
 main {
     display: flex;
     justify-content: center;
     padding: 60px 20px;
-    background-color: #f9f9f9;
+    background-color: white;
 }
 
 .texto-contato {
@@ -146,7 +100,7 @@ form button[type="submit"] {
     padding: 15px;
     border: none;
     border-radius: 8px;
-    background-color: #2859B6;
+    background-color: #1C2567;
     color: white;
     font-size: 1.2em;
     font-weight: bold;
@@ -155,95 +109,90 @@ form button[type="submit"] {
 }
 
 form button[type="submit"]:hover {
-    background-color: #1e4a9c;
+    background-color: #1c2599;
 }
 
 footer{
-    background-image: url('/Voluncheer/img/footer.jpg');
-    background-size: cover;
-    background-position: center;
-    color: white;
-    padding: 40px 20px 0;
-    text-align: center;
-    font-family: "Alata", sans-serif;
+  background: #F9EFE4;
+  background: linear-gradient(90deg,rgba(249, 239, 228, 1) 0%, rgba(114, 162, 237, 1) 100%);
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 20px 2%;
+  font-family: "Alata", sans-serif;
 }
 
 .footer-container {
-    display: flex; 
-    justify-content: space-around; 
-    flex-wrap: wrap; 
-    gap: 20px; 
-    max-width: 1200px;
-    margin: 0 auto; 
+  display: flex;
+  align-items: center;
+  padding: 0 40px;
 }
 
-.footer-column {
-    flex: 1; 
-    min-width: 250px; 
+.logo-voluncheer {
+  flex: 1;
 }
 
-.footer-column h4 {
-    margin-bottom: 15px;
-    text-transform: uppercase;
-    font-weight: bold;
-    font-size: larger;
+.logo-voluncheer img{
+  width: 320px;
+  height: auto;
 }
 
-.footer-column p {
-    line-height: 1.5;
-    color:#CBCFF9 ;
-    size: 14px;
-}
-
-.footer-links {
-    list-style: none; 
-    padding: 0;
-}
-
-.footer-links a {
-    color: #d1d1d1;
-    text-decoration: none;
-    transition: color 0.3s ease, transform 0.3s ease;
-}
-
-.footer-links a:hover {
-    color: #FFFFFF; 
-    transform: scale(1.1);
-}
-
-.footer-links li a {
-    color: #CBCFF9;
-    text-decoration: none; 
-    line-height: 2;
-}
-
-.footer-links li a:hover {
-    text-decoration: underline;
+.social-logos {
+  flex: 1;
+  text-align: center;
 }
 
 .social-logos a {
-    margin: 0 10px; 
-    text-decoration: none;
+  margin: 0 10px;
+  text-decoration: none;
 }
 
-.social-logos a:hover img {
-    opacity: 1;
-    transform: scale(1.15); 
+.social-logos i {
+  font-size: 32px;
+  color: #1C2567;
+  opacity: 0.8;
+  transition: 0.3s ease;
 }
 
-.social-logos img {
-    width: 32px; 
-    height: auto;
-    opacity: 0.8;
+.social-logos i:hover {
+  opacity: 1;
+  transform: scale(1.15);
+}
+
+.footer-column {
+  flex: 1;
+  text-align: right;
+  margin-top: 10px;
+}
+
+.footer-column h4 {
+  color:  #1C2567;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li a {
+  color: #2a3694;
+  text-decoration: none;
+  line-height: 2;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.footer-links li a:hover {
+  text-decoration: underline;
+  transform: scale(1.05);
 }
 
 .footer-bottom {
-    flex-basis: 100%;
-    text-align: center;
-    padding: 20px;
-    margin-top: 30px;
-    border-top: 1px solid rgba(255, 255, 255, 0.2); 
-    font-size:14px;
+  flex-basis: 100%;
+  text-align: center;
+  padding: 20px;
+  margin-top: 30px;
+  border-top: 1.3px solid rgba(255, 255, 255, 0.2);
+  font-size:14px;
 }
 
 @media (max-width: 992px) {
