@@ -4,6 +4,15 @@
   box-sizing: border-box;
 }
 
+html, body {
+  overflow-x: hidden;
+}
+
+.PrimeiroFundo {
+    width: 100%;
+    display: block;
+}
+
 .headerclass{
   background-color: #1C2567;
   display: flex;
@@ -17,7 +26,7 @@ nav ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 20px;;
+  gap: 20px;
 }
 
 nav ul li{
@@ -40,9 +49,48 @@ header div {
   display: flex;
 }
 
+.perfil button{
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #BDE4FF;
+  color: #1C2567;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 35px;
+}
+
+.alata-regular {
+  font-family: "Alata", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.sumana-regular {
+  font-family: "Sumana", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.sumana-bold {
+  font-family: "Sumana", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
 main {
     display: flex;
     justify-content: center;
+    text-align: center;
     padding: 60px 20px;
     background-color: white;
 }
@@ -113,153 +161,203 @@ form button[type="submit"]:hover {
 }
 
 footer{
-  background: #F9EFE4;
-  background: linear-gradient(90deg,rgba(249, 239, 228, 1) 0%, rgba(114, 162, 237, 1) 100%);
-  background-size: cover;
-  background-position: center;
-  color: white;
-  padding: 20px 2%;
-  font-family: "Alata", sans-serif;
+    background: #F9EFE4;
+    background: linear-gradient(90deg,rgba(249, 239, 228, 1) 0%, rgba(114, 162, 237, 1) 100%);
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 20px 2%;
+    font-family: "Alata", sans-serif;
 }
 
 .footer-container {
-  display: flex;
-  align-items: center;
-  padding: 0 40px;
+    display: flex;
+    align-items: center;
+    padding: 0 40px;
 }
 
 .logo-voluncheer {
-  flex: 1;
+    flex: 1;
 }
 
 .logo-voluncheer img{
-  width: 320px;
-  height: auto;
+    width: 320px;
+    height: auto;
 }
 
 .social-logos {
-  flex: 1;
-  text-align: center;
+    flex: 1;
+    text-align: center;
 }
 
 .social-logos a {
-  margin: 0 10px;
-  text-decoration: none;
+    margin: 0 10px;
+    text-decoration: none;
 }
 
 .social-logos i {
-  font-size: 32px;
-  color: #1C2567;
-  opacity: 0.8;
-  transition: 0.3s ease;
+    font-size: 32px;
+    color: #1C2567;
+    opacity: 0.8;
+    transition: 0.3s ease;
 }
 
 .social-logos i:hover {
-  opacity: 1;
-  transform: scale(1.15);
+    opacity: 1;
+    transform: scale(1.15);
 }
 
 .footer-column {
-  flex: 1;
-  text-align: right;
-  margin-top: 10px;
+    flex: 1;
+    text-align: right;
+    margin-top: 10px;
 }
 
 .footer-column h4 {
   color:  #1C2567;
+
 }
 
 .footer-links {
-  list-style: none;
-  padding: 0;
+    list-style: none;
+    padding: 0;
 }
 
 .footer-links li a {
-  color: #2a3694;
-  text-decoration: none;
-  line-height: 2;
-  transition: color 0.3s ease, transform 0.3s ease;
+    color: #2a3694;
+    text-decoration: none;
+    line-height: 2;
+    transition: color 0.3s ease, transform 0.3s ease;
 }
 
 .footer-links li a:hover {
-  text-decoration: underline;
-  transform: scale(1.05);
+    text-decoration: underline;
+    transform: scale(1.05);
 }
 
 .footer-bottom {
-  flex-basis: 100%;
-  text-align: center;
-  padding: 20px;
-  margin-top: 30px;
-  border-top: 1.3px solid rgba(255, 255, 255, 0.2);
-  font-size:14px;
+    flex-basis: 100%;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+    border-top: 1.3px solid rgba(255, 255, 255, 0.2); 
+    font-size:14px;
 }
 
-@media (max-width: 992px) {
-    .opcoes {
-        gap: 2%;
-        left: 0;
-    }
-
-    .opcoes button {
-        font-size: 14px;
-        padding: 8px 15px;
-    }
+.logo-voluncheer img {
+    width: 320px;
+    height: auto;
 }
 
-@media (max-width: 768px) {
-  nav {
+@media screen and (max-width:768px){
+
+  .headerclass{
     flex-direction: column;
-    align-items: center; 
-    gap: 20px;
-    padding: 15px;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    gap: 15px; 
   }
 
-  .titulo img {
+  .headerclass .titulo {
+    order: 0;
+  }
+
+  nav {
+    order: 1;
+  }
+
+  .perfil {
+    order: 2;
+  }
+
+  .headerclass img{
     max-width: 220px; 
     height: auto;
+    margin-bottom: 5px;
   }
 
-  .opcoes {
-    flex-direction: column;
+  nav{
     width: 100%;
+    margin-right: 0;
+  }
+
+  nav ul {
+    flex-direction: column;
     align-items: center;
-    gap: 10px; 
+    gap: 15px;
+    padding: 0;
   }
 
-  .opcoes a {
-    width: auto; 
+  nav ul li{
+    padding: 8px 30px; 
+    font-size: 14px;
+    text-align: center;
+    border-radius: 30px; 
   }
 
-  .opcoes button {
-    width: auto;
-    padding: 8px 35px; 
-    font-size: 15px;
-    border-radius: 25px; 
+  nav a{
+    font-size: 16px;
+    display: block;
+    width: 100%;
+    height: 100%;
   }
 
-  .perfil button {
-    width: 45px;   
+  .perfil button{
+    width: 45px;  
     height: 45px;
     font-size: 22px;
-    margin-top: 10px;
-  }
+    margin-bottom: 10px;
+  } 
 
-  .texto-contato h2 {
-    font-size: 2em;
+  .logo-voluncheer img {
+    width: 250px;
   }
 
   .footer-container {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    padding: 20px;
+    gap: 20px;
   }
 
-  .footer-column {
-    min-width: 100%;
+  .footer-links {
+    text-align: center;
   }
+
 }
 
+@media screen and (min-width:769px) and (max-width:900px) {
+  .headerclass li a{
+    font-size: 14px;
+    padding: 5px;
+  }
 
+  .headerclass nav{
+    padding-right: 80px;
+    padding-top: 15px;
+  }
 
+  .headerclass img{
+    max-width: 220px; 
+    height: auto;
+  }
 
+}
+
+@media screen and (min-width:901px) {
+  .headerclass nav{
+    padding-right: 150px;
+    padding-top: 15px;
+  }
+
+  article img{
+    padding-right: 10px;
+  }
+
+  .headerclass img{
+    max-width: 250px;
+    padding-left: 10px;
+  }
+}
