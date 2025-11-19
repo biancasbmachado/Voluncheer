@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+body::-webkit-scrollbar {
+  display: none;
+}
+
 html, body {
   overflow-x: hidden;
 }
@@ -256,7 +260,7 @@ footer{
     background-position: center;
     color: white;
     padding: 20px 2%;
-    font-family: "Alata", sans-serif;
+    font-family: "Poppins", sans-serif;
 }
 
 .footer-container {

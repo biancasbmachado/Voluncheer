@@ -4,6 +4,19 @@
   box-sizing: border-box;
 }
 
+body::-webkit-scrollbar {
+  display: none;
+}
+
+html, body {
+  overflow-x: hidden;
+}
+
+.PrimeiroFundo {
+    width: 100%;
+    display: block;
+}
+
 .headerclass{
   background-color: #1C2567;
   display: flex;
@@ -17,7 +30,7 @@ nav ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 20px;;
+  gap: 20px;
 }
 
 nav ul li{
@@ -48,7 +61,6 @@ main{
   gap: 15px
 }
 
-
 .eventos{
   gap:10px;
 }
@@ -59,7 +71,7 @@ main{
   height: 50px;
   border-radius: 50%;
   background-color: #BDE4FF;
-  color: #4729E1;
+  color: #1C2567;
   border: none;
   display: flex;
   align-items: center;
@@ -100,7 +112,7 @@ html, body {
 
 .search-bar input {
     padding: 10px 15px;
-    border: 2px solid #4f83f1;
+    border: 2px solid #72A2ED;
     border-right: none;
     border-radius: 8px 0 0 8px;
     outline: none;
@@ -112,8 +124,8 @@ html, body {
 .search-bar button {
     height: 50px;
     padding: 0 20px;
-    background-color: #4f83f1;
-    border: 2px solid #4f83f1;
+    background-color: #72A2ED;
+    border: 2px solid #72A2ED;
     border-left: none;
     border-radius: 0 8px 8px 0;
     cursor: pointer;
@@ -137,7 +149,7 @@ html, body {
     display: flex;
     justify-content: center;
     width: 100%;
-    padding-top: 15px;
+    margin-top: 25px;
 }
 
 .header-slider {
@@ -153,7 +165,7 @@ html, body {
 }
 
 .slide {
-  width: 100vw;
+  width: 100%;
   height: 100%;
   position: relative;
   flex-shrink: 0;
@@ -169,7 +181,7 @@ html, body {
   position: absolute;
   bottom: 30px;
   left: 30px;
-  font-family: "Alata", serif;
+  font-family: "Poppins", sans-serif;
   text-transform: uppercase;
   font-size: 24px;
   background: rgba(128,128,128,0.3);
@@ -180,25 +192,24 @@ html, body {
 
 .txteventos{
   text-align: left;
-  font-family: "Alata", serif;
+  font-family: "Poppins", sans-serif;
   font-size: 23px;
   font-style:normal;
-  color: #0153d5;
+  color: #1C2567;
 }
 
 .txteventos2{
   text-align: left;
-  font-family: "Alata", serif;
+  font-family: "Poppins", sans-serif;
   font-size: 14px;
   font-style:normal;
-
   color: grey;
 }
 
 .eventos-ongs-conteudo {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 }
 
 .eventos-ongs-conteudo a {
@@ -222,22 +233,22 @@ html, body {
 
 article img {
     width: 150px; 
-    height: 100%;
     object-fit: cover;
     border-radius: 8px;
 
 }
 
 .eventos-ongs-item h3 {
-    font-family: "Alata", serif;
+    font-family: "Poppins", sans-serif;
     font-weight: bold;
     text-transform: uppercase;
     text-align: left;
-    color: #4380dc;
+    color: #1C2567;
+    font-size: 20px;
 }
 
 .eventos-ongs-item h4 {
-    font-family: "Alata", serif;
+    font-family: "Poppins", sans-serif;
     font-weight: normal;
     font-size: 14px;
     text-align: left;
@@ -245,7 +256,7 @@ article img {
 }
 
 .eventos-ongs-item:hover {
-    background-color: #92ccf6;
+    background-color: #98b8ec;
 }
 
 footer{
@@ -255,7 +266,7 @@ footer{
     background-position: center;
     color: white;
     padding: 40px 2%;
-    font-family: "Alata", sans-serif;
+    font-family: "Poppins", sans-serif;
 }
 
 .footer-container {
@@ -263,8 +274,6 @@ footer{
     align-items: center;
     padding: 0 40px;
 }
-
-/* BLOCO ESQUERDO – LOGO */
 
 .logo-voluncheer {
     flex: 1;
@@ -275,32 +284,33 @@ footer{
     height: auto;
 }
 
-/*REDES SOCIAIS*/
-
 .social-logos {
     flex: 1;
     text-align: center;
 }
+
 .social-logos a {
     margin: 0 10px;
     text-decoration: none;
 }
+
 .social-logos i {
     font-size: 32px;
     color: #1C2567;
     opacity: 0.8;
     transition: 0.3s ease;
 }
+
 .social-logos i:hover {
     opacity: 1;
     transform: scale(1.15);
 }
 
-/* BLOCO DIREITO – MENU */
 .footer-column {
     flex: 1;
     text-align: right;
 }
+
 .footer-column h4 {
   color:  #1C2567;
 }
@@ -330,12 +340,29 @@ footer{
     border-top: 1.3px solid rgba(255, 255, 255, 0.2); 
     font-size:14px;
 }
+
 .logo-voluncheer img {
     width: 320px;
     height: auto;
 }
 
-@media screen and (max-width:600px){
+.carousel-desktop {
+    display: block;
+}
+
+.carousel-mobile {
+    display: none;
+}
+
+.banner-mobile {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+}
+
+@media screen and (max-width:768px){
+
   .headerclass{
     flex-direction: column;
     justify-content: center;
@@ -344,22 +371,22 @@ footer{
     gap: 15px; 
   }
 
-  .headerclass figure {
-    order: 1; 
+  .headerclass .titulo {
+    order: 0;
   }
 
-  .headerclass > div:first-of-type {
-    order: 2; 
+  nav {
+    order: 1;
   }
 
   .perfil {
-    order: 3; 
+    order: 2;
   }
 
   .headerclass img{
-    max-width: 250px; 
+    max-width: 220px; 
     height: auto;
-    margin-bottom: 5px; 
+    margin-bottom: 5px;
   }
 
   nav{
@@ -370,13 +397,13 @@ footer{
   nav ul {
     flex-direction: column;
     align-items: center;
-    gap: 10px;
+    gap: 15px;
     padding: 0;
   }
 
   nav ul li{
     padding: 8px 30px; 
-    font-size: 16px;
+    font-size: 14px;
     text-align: center;
     border-radius: 30px; 
   }
@@ -392,7 +419,7 @@ footer{
     width: 45px;  
     height: 45px;
     font-size: 22px;
-    margin-top: 15px; 
+    margin-bottom: 10px;
   } 
 
   article h3, article a{
@@ -417,14 +444,14 @@ footer{
     flex: 1 1 100%;
     padding: 15px 15px 0 15px;
   }
-  
-  /*parte do slide*/
+
   .search-container-ongs{
     padding-left: 15px;
     padding-right: 15px;
   }
+
   .header-slider {
-    height: 40vh; /*muda a altura dele, o vh é viewport height, que se adapta ao tamanho da tela.*/
+    height: 40vh;
   }
 
   .slider-track {
@@ -441,8 +468,31 @@ footer{
     object-fit: cover;
     display: block;
   }
-}
 
+  .carousel-desktop {
+    display: none !important;
+  }
+
+  .carousel-mobile {
+    display: block !important;
+  }
+
+  .logo-voluncheer img {
+    width: 250px;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    gap: 20px;
+  }
+
+  .footer-links {
+    text-align: center;
+  }
+}
 
 @media screen and (min-width:601px) and (max-width:900px) {
   article img{
