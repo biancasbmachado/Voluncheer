@@ -40,3 +40,20 @@ telefone.addEventListener("input", e => {
         : valor.replace(/(\d{2})(\d{5})(\d{0,4})/, "($1) $2-$3");
     e.target.value = valor;
 });
+
+const hamburgerBtn = document.getElementById('hamburgerBtn');
+const menuContent = document.getElementById('menuContent');
+
+hamburgerBtn.addEventListener('click', () => {
+
+    menuContent.classList.toggle('active');
+        
+    const icon = hamburgerBtn.querySelector('i');
+    if (menuContent.classList.contains('active')) {
+        icon.classList.remove('bi-list');
+        icon.classList.add('bi-x-lg');
+    } else {
+        icon.classList.remove('bi-x-lg');
+        icon.classList.add('bi-list');
+    }
+});
