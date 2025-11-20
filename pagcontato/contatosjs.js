@@ -32,7 +32,6 @@ form.addEventListener("submit", (e) => {
     form.reset();
 });
 
-// Máscara para telefone
 telefone.addEventListener("input", e => {
     let valor = e.target.value.replace(/\D/g, "");
     valor = valor.length <= 10
