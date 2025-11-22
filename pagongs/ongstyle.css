@@ -495,6 +495,12 @@ footer{
 }
 
 @media screen and (min-width:601px) and (max-width:900px) {
+  .headerclass img{
+    max-width: 200px; 
+    height: auto;
+    margin-bottom: 5px;
+  }
+
   article img{
     padding-right: 10px;
   }
@@ -504,8 +510,9 @@ footer{
   }
 
   .headerclass nav{
+    padding-top: 15px;
     padding-right: 80px;
-  }
+  } 
 }
 
 @media screen and (min-width:901px) {
