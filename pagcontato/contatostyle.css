@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+body::-webkit-scrollbar {
+  display: none;
+}
+
 html, body {
   overflow-x: hidden;
 }
@@ -348,7 +352,7 @@ footer{
 
 @media screen and (min-width:901px) {
   .headerclass nav{
-    padding-right: 150px;
+    padding-right: 160px;
     padding-top: 15px;
   }
 
