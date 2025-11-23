@@ -16,6 +16,13 @@
       {
         "image-alt": "off"
       }
+    ],
+    "no-inline-styles": "off",
+    "axe/forms": [
+      "default",
+      {
+        "select-name": "off"
+      }
     ]
   }
 }
