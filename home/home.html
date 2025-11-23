@@ -1,166 +1,224 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Voluncheer - Home</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="home.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Sumana:wght@400;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Alata&family=Sumana&display=swap" rel="stylesheet">
-    <link rel="icon" href="img/favicon.ico">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login</title>
+  <link rel="stylesheet" href="stylelog.css" />
 </head>
 <body>
-    <section class="PrimeiroFundo">
-        <header class="headerclass">
-            <div class="titulo">
-                <a href="../home/home.html">
-                    <img src="../img/LOGO-09.png" alt="Logo Voluncheer">
-                </a>
-            </div>
 
-            <button class="hamburger-btn" id="hamburgerBtn" aria-label="Abrir menu">
-                <i class="bi bi-list"></i>
-            </button>
+  <div class="container">
+    <div class="logo-container">
+      <img src="/Voluncheer-main/img/login/LOGO-05.png" alt="Logo Voluncheer">
+    </div>
 
-            <div class="menu-content" id="menuContent">
-                <nav class="opcoes">
-                    <ul>
-                        <li><a href="../index.html">HOME</a></li>
-                        <li><a href="../pagsobre/sobre.html">SOBRE</a></li>
-                        <li><a href="../pagongs/ongs.html">ONG'S</a></li>
-                        <li><a href="../pagcontato/contatos.html">CONTATO</a></li>
-                    </ul>
-                </nav>
-                
-                <div class="perfil">
-                    <a href="../login/login.html">
-                        <button><i class="bi bi-person"></i></button>
-                    </a>
-                </div>
-            </div>
-        </header>
-        <div class="carousel-desktop">
-            <div id="carouselExampleRide" class="carousel slide" data-bs-ride="true">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <a href="../home/home.html"><img src="../img/carousel/sombra/basef.png" class="d-block w-100" alt="Home"></a>
-                    </div>
-                    <div class="carousel-item"><a href="../ongsindividuais/ongsreciclagem.html"><img src="../img/carousel/sombra/reciclagemf.png" class="d-block w-100" alt="Reciclagem"></a></div>
-                    <div class="carousel-item"><a href="../ongsindividuais/ongscuidadosaosidosos.html"><img src="../img/carousel/sombra/idososf.png" class="d-block w-100" alt="Idosos"></a></div>
-                    <div class="carousel-item"><a href="../ongsindividuais/ongsprotecaoaosanimais.html"><img src="../img/carousel/sombra/animaisf.png" class="d-block w-100" alt="Animais"></a></div>
-                    <div class="carousel-item"><a href="../ongsindividuais/ongscombateafome.html"><img src="../img/carousel/sombra/comidaf.png" class="d-block w-100" alt="Comida"></a></div>
-                    <div class="carousel-item"><a href="../ongsindividuais/ongcoletadelixo.html"><img src="../img/carousel/sombra/coletaf.png" class="d-block w-100" alt="Coleta"></a></div>
-                    <div class="carousel-item"><a href="../ongsindividuais/ongsapoioasaude.html"><img src="../img/carousel/sombra/saudef.png" class="d-block w-100" alt="Saúde"></a></div>
-                </div>
+    <div id="login-section">
+      <h2>Login</h2>
 
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="prev"><span class="carousel-control-prev-icon"></span></button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="next"><span class="carousel-control-next-icon"></span></button>
-            </div>
-        </div>
+      <label for="login-email">Email</label>
+      <input id="login-email" type="email" placeholder="nome@sobrenome.com" />
 
-        <div class="carousel-mobile">
-            <img class="banner-mobile" src="../img/basemobile.png" alt="Banner Mobile">
-        </div>
-    </section>
+      <label for="login-senha">Senha</label>
+      <input id="login-senha" type="password" placeholder="Senha" />
 
-    <section class="search-container-ongs">
-        <form class="search-bar" action="#" method="get">
-            <input type="text" placeholder="Pesquisar...">
-            <button type="submit"><img src="../img/lupa.png" alt="Buscar" class="lupa-icon"></button>
-        </form>
-    </section>
+      <select id="login-tipo">
+        <option value="voluntario">Voluntário</option>
+        <option value="ong">ONG</option>
+      </select>
 
-    <section class="SegundoFundo">
-        <div class="ongs-grid">
-            <div class="ong-item">
-                <a href="../ongsindividuais/ongsreciclagem.html">
-                    <img src="../img/home/filtro/reciclagemf.png" class="ong-img">
-                </a>
-                <h3 class="ong-titulo">
-                    <a href="../ongsindividuais/ongsreciclagem.html">ONG'S de Reciclagem</a>
-                </h3>
-                <p class="ong-frase">Recicle hoje para um amanhã melhor.</p>
-                <a class="ong-saiba" href="../ongsindividuais/ongsreciclagem.html">Saiba mais</a>
-            </div>
-            <div class="ong-item">
-                <a href="../ongsindividuais/ongsapoioasaude.html">
-                    <img src="../img/home/filtro/saudef.png" class="ong-img">
-                </a>
-                <h3 class="ong-titulo">
-                    <a href="../ongsindividuais/ongsapoioasaude.html">ONG'S de Apoio à Saúde Comunitária</a>
-                </h3>
-                <p class="ong-frase">Saúde é direito de todos.</p>
-                <a class="ong-saiba" href="../ongsindividuais/ongsapoioasaude.html">Saiba mais</a>
-            </div>
-            <div class="ong-item">
-                <a href="../ongsindividuais/ongsprotecaoaosanimais.html">
-                    <img src="../img/home/filtro/animaisf.png" class="ong-img">
-                </a>
-                <h3 class="ong-titulo">
-                    <a href="../ongsindividuais/ongsprotecaoaosanimais.html">ONG'S de Proteção aos Animais</a>
-                </h3>
-                <p class="ong-frase">Dê voz a quem não pode falar.</p>
-                <a class="ong-saiba" href="../ongsindividuais/ongsprotecaoaosanimais.html">Saiba mais</a>
-            </div>
-            <div class="ong-item">
-                <a href="../ongsindividuais/ongscuidadosaosidosos.html">
-                    <img src="../img/home/filtro/idososf.png" class="ong-img">
-                </a>
-                <h3 class="ong-titulo">
-                    <a href="../ongsindividuais/ongscuidadosaosidosos.html">ONG'S de Cuidado aos Idosos</a>
-                </h3>
-                <p class="ong-frase">Respeito e cuidado não têm idade.</p>
-                <a class="ong-saiba" href="../ongsindividuais/ongscuidadosaosidosos.html">Saiba mais</a>
-            </div>
-            <div class="ong-item">
-                <a href="../ongsindividuais/ongscombateafome.html">
-                    <img src="../img/home/filtro/comidaf.png" class="ong-img">
-                </a>
-                <h3 class="ong-titulo">
-                    <a href="../ongsindividuais/ongscombateafome.html">ONG'S de Combate à Fome</a>
-                </h3>
-                <p class="ong-frase">Transformando vidas todos os dias.</p>
-                <a class="ong-saiba" href="../ongsindividuais/ongscombateafome.html">Saiba mais</a>
-            </div>
-            <div class="ong-item">
-                <a href="../ongsindividuais/ongcoletadelixo.html">
-                    <img src="../img/home/filtro/coletaf.png" class="ong-img">
-                </a>
-                <h3 class="ong-titulo">
-                    <a href="../ongsindividuais/ongcoletadelixo.html">ONG'S de Coleta de Lixo</a>
-                </h3>
-                <p class="ong-frase">Ajude a manter o lixo no lixos.</p>
-                <a class="ong-saiba" href="../ongsindividuais/ongcoletadelixo.html">Saiba mais</a>
-            </div>
-        </div>
-    </section>
+      <button onclick="login()">Entrar</button>
+      <p class="link" onclick="mostrarCadastro()">Não tem conta? Cadastre-se</p>
+    </div>
 
-    <footer>
-        <section class="footer-container">
-            <div class="logo-voluncheer"><a href="home.html"><img src="../img/LOGO-02.png"></a></div>
-            <div class="social-logos">
-                <a href="https://facebook.com" target="_blank"><i class="bi bi-facebook"></i></a>
-                <a href="https://youtube.com" target="_blank"><i class="bi bi-youtube"></i></a>
-                <a href="https://instagram.com" target="_blank"><i class="bi bi-instagram"></i></a>
-            </div>
-            <div class="footer-column">
-                <h4>Menu</h4>
-                <ul class="footer-links">
-                    <li><a href="../home/home.html">Home</a></li>
-                    <li><a href="../pagsobre/sobre.html">Sobre</a></li>
-                    <li><a href="../pagongs/ongs.html">ONG's</a></li>
-                    <li><a href="../pagcontato/contatos.html">Contato</a></li>
-                </ul>
-            </div>
-        </section>
-        <div class="footer-bottom"><p>&copy; 2025 Voluncheer. Todos os direitos reservados.</p></div>
-    </footer>
-    <script src="home.js"></script>
+    <div id="cadastro-section" style="display:none;">
+      <h2>Cadastro</h2>
+
+      <label for="cad-nome">Nome</label>
+      <input id="cad-nome" type="text" placeholder="Nome" />
+
+      <label for="cad-email">Email</label>
+      <input id="cad-email" type="email" placeholder="Email" />
+
+      <label for="cad-senha">Senha</label>
+      <input id="cad-senha" type="password" placeholder="Senha" />
+
+      <select id="cad-tipo">
+        <option value="voluntario">Voluntário</option>
+        <option value="ong">ONG</option>
+      </select>
+
+      <div id="extra-ong" style="display:none; margin-top:10px;">
+        
+        <label for="cnpj">CNPJ</label>
+        <input id="cnpj" type="text" maxlength="18" placeholder="00.000.000/0000-00" />
+
+        <label for="telefone">Telefone / WhatsApp</label>
+        <input id="telefone" type="tel" placeholder="(99) 99999-9999" />
+
+        <label for="cep">CEP</label>
+        <input id="cep" type="text" placeholder="00000-000" maxlength="9" />
+        
+        <label for="rua">Rua</label>
+        <input id="rua" type="text" disabled />
+        
+        <label for="bairro">Bairro</label>
+        <input id="bairro" type="text" disabled />
+        
+        <label for="cidade">Cidade</label>
+        <input id="cidade" type="text" disabled />
+        
+        <label for="estado">Estado</label>
+        <input id="estado" type="text" disabled />        
+
+        <label for="ong-area">Área de atuação</label>
+        <input id="ong-area" type="text" placeholder="Área de atuação (ex.: Educação, Saúde)" />
+
+        <label for="ong-site">Site oficial / Redes sociais</label>
+        <input id="ong-site" type="url" placeholder="Site oficial ou Redes sociais (https://...)" />
+
+        <label for="ong-desc">Descrição da ONG</label>
+        <textarea id="ong-desc" placeholder="Descrição curta da ONG (missão ou objetivo)" cols="53" rows="5"></textarea>
+
+        <label class="checkbox-label">
+          Sou um representante autorizado da ONG
+          <input id="ong-autorizado" type="checkbox" />
+       </label>
+
+       <label class="upload-label" style="display:block; margin-top:8px;">
+        Documento de comprovação (estatuto, certificado):
+        <input id="ong-doc" type="file" accept=".pdf,.jpg,.jpeg,.png" />
+      </label>
+
+      <label for="email-institucional">Email do representante</label>
+      <input id="email-institucional" type="email" placeholder="Email institucional" />
+
+     </div>
+
+      <button onclick="cadastrar()">Cadastrar</button>
+      <p class="link" onclick="mostrarLogin()">Já tem conta? Faça login</p>
+    </div>
+
+    <div id="dashboard" style="display:none;">
+      <h2 id="dash-titulo"></h2>
+      <button class="logout" onclick="window.location.href='../home/home.html'">Ir para Home</button>
+    </div>
+
+  </div>
+
+<script>
+
+    function mostrarCadastro() {
+      document.getElementById("login-section").style.display = "none";
+      document.getElementById("cadastro-section").style.display = "block";
+    }
+
+    function mostrarLogin() {
+      document.getElementById("cadastro-section").style.display = "none";
+      document.getElementById("login-section").style.display = "block";
+    }
+
+    const selectCadTipo = document.getElementById("cad-tipo");
+    const extraOng = document.getElementById("extra-ong");
+
+    selectCadTipo.addEventListener("change", function() {
+      extraOng.style.display = selectCadTipo.value === "ong" ? "block" : "none";
+    });
+
+    const cepInput = document.getElementById("cep");
+
+cepInput.addEventListener("blur", async function () {
+    const cep = cepInput.value.replace(/\D/g, '');
+
+    if(cep.length !== 8) {
+        alert("CEP inválido");
+        return;
+    }
+
+    try {
+        const response = await fetch(https://viacep.com.br/ws/${cep}/json/);
+        const data = await response.json();
+
+        if(data.erro){
+            alert("CEP não encontrado!");
+            return;
+        }
+
+        document.getElementById("rua").value = data.logradouro;
+        document.getElementById("bairro").value = data.bairro;
+        document.getElementById("cidade").value = data.localidade;
+        document.getElementById("estado").value = data.uf;
+
+    } catch {
+        alert("Erro ao consultar CEP");
+    }
+});
+
+    function cadastrar() {
+
+      const nome = document.getElementById("cad-nome").value.trim();
+      const email = document.getElementById("cad-email").value.trim();
+      const senha = document.getElementById("cad-senha").value.trim();
+      const tipo = document.getElementById("cad-tipo").value;
+
+      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      const senhaRegex = /^(?=.*\d).{6,}$/;
+
+      if (!emailRegex.test(email)) {
+          alert("Por favor, insira um e-mail válido.");
+          return;
+      }
+
+      if (!senhaRegex.test(senha)) {
+          alert("A senha deve ter no mínimo 6 caracteres e pelo menos 1 número.");
+          return;
+      }
+
+      if (!nome || !email || !senha) {
+        alert("Preencha nome, email e senha!");
+        return;
+      }
+
+      const usuario = { nome, email, senha, tipo };
+
+      let usuarios = JSON.parse(localStorage.getItem("usuarios")) || [];
+      usuarios.push(usuario);
+      localStorage.setItem("usuarios", JSON.stringify(usuarios));
+
+      alert("Cadastro concluído!");
+      mostrarLogin();
+    }
+
+    function login() {
+      const email = document.getElementById("login-email").value.trim();
+      const senha = document.getElementById("login-senha").value.trim();
+      const tipo = document.getElementById("login-tipo").value;
+
+      let usuarios = JSON.parse(localStorage.getItem("usuarios")) || [];
+      const user = usuarios.find(u => u.email === email && u.senha === senha && u.tipo === tipo);
+
+      if (!user) {
+        alert("Usuário não encontrado!");
+        return;
+      }
+
+      localStorage.setItem("logado", JSON.stringify(user));
+      abrirPainel(user);
+    }
+
+    function abrirPainel(user) {
+      document.getElementById("login-section").style.display = "none";
+      document.getElementById("cadastro-section").style.display = "none";
+      document.getElementById("dashboard").style.display = "block";
+      document.getElementById("dash-titulo").innerText = Olá, ${user.nome}! Você está logado como ${user.tipo}.;
+    }
+
+    function logout() {
+      localStorage.removeItem("logado");
+      mostrarLogin();
+    }
+    
+</script>
+
 </body>
 </html>
