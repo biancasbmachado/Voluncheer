@@ -79,24 +79,6 @@ main{
   font-size: 35px;
 }
 
-.alata-regular {
-  font-family: "Alata", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.sumana-regular {
-  font-family: "Sumana", serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.sumana-bold {
-  font-family: "Sumana", serif;
-  font-weight: 700;
-  font-style: normal;
-}
-
 html, body {
     margin: 0;
     padding: 0;
@@ -150,44 +132,6 @@ html, body {
     justify-content: center;
     width: 100%;
     margin-top: 25px;
-}
-
-.header-slider {
-  width: 100%;
-  overflow: hidden;
-  height: 100%;
-  position: relative;
-}
-
-.slider-track {
-  display: flex;
-  transition: transform 2s ease-in-out;
-}
-
-.slide {
-  width: 100%;
-  height: 100%;
-  position: relative;
-  flex-shrink: 0;
-}
-
-.slide img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.caption {
-  position: absolute;
-  bottom: 30px;
-  left: 30px;
-  font-family: "Alata", serif;
-  text-transform: uppercase;
-  font-size: 24px;
-  background: rgba(128,128,128,0.3);
-  color: white;
-  padding: 10px 20px;
-  border-radius: 8px;
 }
 
 article img {
@@ -358,7 +302,6 @@ footer{
 }
 
 @media screen and (max-width:768px){
-
   .headerclass{
     flex-direction: column;
     justify-content: center;
@@ -548,7 +491,6 @@ footer{
   }
 }
 
-/*Menu Hamburguer*/
 .hamburger-btn {
     display: none; 
     background: none;
@@ -566,90 +508,90 @@ footer{
 }
 
 @media screen and (max-width: 768px) {
-    .headerclass {
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        padding: 10px 20px;
-    }
+  .headerclass {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+  }
 
-    .hamburger-btn {
-        display: block;
-    }
+  .hamburger-btn {
+      display: block;
+  }
 
-    .menu-content {
-        position: absolute;
-        top: 100%;
-        left: 0;
-        width: 100%;
-        background-color: #1C2567; 
-        
-        flex-direction: column;
-        align-items: center;
-        justify-content: flex-start;
-        
-        z-index: 1000;
+  .menu-content {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      background-color: #1C2567; 
+      
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      
+      z-index: 1000;
 
-        max-height: 0;
-        overflow: hidden;
-        transition: max-height 0.4s ease-in-out, padding 0.4s ease;
-        padding: 0;
-    }
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.4s ease-in-out, padding 0.4s ease;
+      padding: 0;
+  }
 
-    .menu-content.active {
-        max-height: 600px;
-        padding: 30px 0;
-        border-bottom: none; 
-        box-shadow: 0px 10px 15px rgba(0,0,0,0.3);
-    }
+  .menu-content.active {
+      max-height: 600px;
+      padding: 30px 0;
+      border-bottom: none; 
+      box-shadow: 0px 10px 15px rgba(0,0,0,0.3);
+  }
 
-    nav.opcoes {
-        width: 100%;
-        margin: 0;
-        padding: 0;
-    }
+  nav.opcoes {
+      width: 100%;
+      margin: 0;
+      padding: 0;
+  }
 
-    nav ul {
-        flex-direction: column;
-        align-items: center;
-        gap: 25px;
-        margin-bottom: 30px;
-    }
+  nav ul {
+      flex-direction: column;
+      align-items: center;
+      gap: 25px;
+      margin-bottom: 30px;
+  }
 
-    nav ul li {
-        background-color: transparent;
-        padding: 0;
-        border-radius: 0;
-        width: 100%;
-        text-align: center;
-    }
+  nav ul li {
+      background-color: transparent;
+      padding: 0;
+      border-radius: 0;
+      width: 100%;
+      text-align: center;
+  }
 
-    nav a {
-        font-family: 'Alata', sans-serif;
-        font-size: 18px;
-        color: #F9EFE4;
-        text-transform: uppercase;
-        display: block;
-    }
-    
-    nav a:hover {
-        color: #72A2ED;
-    }
+  nav a {
+      font-family: 'Poppins', sans-serif;
+      font-size: 18px;
+      color: #F9EFE4;
+      text-transform: uppercase;
+      display: block;
+  }
+  
+  nav a:hover {
+      color: #72A2ED;
+  }
 
-    .perfil {
-        margin-top: 10px;
-        margin-left: 0;
-        order: 2;
-    }
+  .perfil {
+      margin-top: 10px;
+      margin-left: 0;
+      order: 2;
+  }
 
-    .perfil button {
-        width: 50px;
-        height: 50px;
-        font-size: 25px;
-        background-color: #1C2567;
-        color: #F9EFE4;       
-        border: 2px solid white; 
-    }
+  .perfil button {
+      width: 50px;
+      height: 50px;
+      font-size: 25px;
+      background-color: #1C2567;
+      color: #F9EFE4;       
+      border: 2px solid white; 
+  }
 }
 
 @media screen and (min-width: 769px) {
