@@ -79,7 +79,6 @@ main{
   font-size: 35px;
 }
 
-
 html, body {
     margin: 0;
     padding: 0;
@@ -96,10 +95,12 @@ main {
 .divsobre {
   display: grid;
   grid-template-columns: 20% 80%;
+  border-radius: 15px;
+  background-color: #d1dbec;
 }
 
 .divsobre img{
-  width: 350px;
+  width: 450px;
 }
 
 .devsobre{
@@ -128,14 +129,15 @@ main {
   margin-bottom: 50px;
 }
 
-section {
+.reconhecimentos {
   font-family: Poppins, sans-serif;
+  margin-top: -18px;
 }
 
 .gridreconhecimentos {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 20px;
+  gap: 60px;
   margin: 40px;
   margin-top: 20px;
 }
@@ -162,12 +164,36 @@ article img {
   margin-bottom: 10px;
 }
 
+.simposio, .congresso {
+  text-align: center;
+  padding-bottom: 20px;
+  font-size: 20px;
+  
+}
+
+.texto-reconhecimentos, .texto-reconhecimentos-2 {
+  text-align: justify;
+  padding-top: 20px;
+  font-weight: bold;
+}
+
 figure1, figure2{
   text-align: center;
 }
 
+figcaption{
+  font-style: italic;
+}
+
 .reconhecimentos-conteudo-2{
   justify-content: flex-start;
+}
+
+.reconhecimentos-conteudo, .reconhecimentos-conteudo-2 {
+  border: 2px solid #d1dbec;
+  background-color: #d1dbec;
+  border-radius: 15px;
+  padding: 20px 30px 30px 30px;
 }
 
 footer{
@@ -353,7 +379,7 @@ footer{
 }
 
 @media screen and (min-width:769px) and (max-width:900px) {
-  article img{
+    article img{
     padding-right: 10px;
   }
 
@@ -390,7 +416,7 @@ footer{
 }
 
 @media screen and (max-width: 768px) {
-  .headerclass {
+ .headerclass {
       flex-direction: row;
       justify-content: space-between;
       align-items: center;
@@ -536,7 +562,7 @@ footer{
     .simposio-tudo,
     .congresso-tudo {
         align-items: center;
-        text-align: center;  
+        text-align: center;
     }
     
     .simposio,

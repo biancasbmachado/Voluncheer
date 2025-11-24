@@ -472,7 +472,6 @@ footer{
     grid-template-columns: repeat(2, 1fr);
     justify-items: center;
   }
-
 }
 
 @media screen and (min-width:901px) {
