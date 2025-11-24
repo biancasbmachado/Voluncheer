@@ -1,67 +1,62 @@
-html, body {
-  margin: 0;
-  padding: 0;
-  height: 100%;
-  overflow-x: hidden;
-}
-
 body {
   position: relative;
+  margin: 0;
   font-family: Arial, sans-serif;
+
   background-image: url("../img/login/VOLUNCHEER.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+
+  overflow-y: auto;
+  overflow-x: hidden;
   min-height: 100vh;
+
   display: flex;
   justify-content: center;
   align-items: center;
-  overflow-x: hidden;
+  padding: 20px;  
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  z-index: -1;
 }
 
 .container {
   background: white;
-  padding: 40px;
+  padding: 30px;
   border-radius: 14px;
-  width: 90%;
+  width: 100%;
   max-width: 420px;
   text-align: center;
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
+
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-start;
-  max-height: 80vh;
-  overflow-y: auto;
-  overflow-x: hidden;
-  margin: 0;
-}
 
-.container::-webkit-scrollbar {
-  width: 8px;
-}
-
-.container::-webkit-scrollbar-thumb {
-  background: #b5b5b5;
-  border-radius: 4px;
-}
-
-.container::-webkit-scrollbar-thumb:hover {
-  background: #888;
+  margin: 30px 0;
 }
 
 .logo-container img {
-  width: 440px;
+  width: 100%;
+  max-width: 350px;
   display: block;
   margin: 0 auto 20px auto;
 }
 
-input, select {
-  width: 90%;
+input, select, textarea {
+  width: 100%;
   padding: 10px;
   margin: 8px 0;
   border-radius: 8px;
   border: 1px solid #ccc;
+  box-sizing: border-box;
 }
 
 button {
@@ -74,20 +69,16 @@ button {
   margin-top: 10px;
   font-weight: bold;
 }
-
-button:hover {
-  background: #5c92db;
-}
+button:hover { background: #5c92db; }
 
 .logout {
-  background: #ff5757;
+  background: #3c7df5;
   margin-top: 20px;
 }
 
 .link {
   color: #555;
 }
-
 .link:hover {
   color: #3c7df5;
   text-decoration: underline;
@@ -96,8 +87,8 @@ button:hover {
 label {
   display: block;
   text-align: left;
-  width: 90%;
-  margin: 5px auto 3px;
+  width: 100%;
+  margin: 5px 0 3px;
   font-size: 14px;
   font-weight: bold;
   color: #4A6EDB;
@@ -111,15 +102,34 @@ label {
   color: transparent;
 }
 
-#cadastro-section,
-#login-section {
-  height: auto !important;
-}
-
 .checkbox-label {
   display: flex;
   align-items: center;
   gap: 8px;
-  white-space: nowrap;
   cursor: pointer;
+}
+
+@media (max-width: 480px) {
+
+  .container {
+    padding: 20px;
+  }
+
+  .logo-container img {
+    max-width: 260px;
+  }
+
+  button {
+    width: 100%;
+  }
+
+  textarea {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 90%;
+  }
 }
