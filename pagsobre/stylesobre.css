@@ -132,12 +132,16 @@ main {
 .reconhecimentos {
   font-family: Poppins, sans-serif;
   margin-top: -18px;
+  margin: 40px;
+  padding-bottom: 5px;
+  border-radius: 15px;
+  background-color: #d1dbec;
 }
 
 .gridreconhecimentos {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 60px;
+  gap: 40px;
   margin: 40px;
   margin-top: 20px;
 }
@@ -148,6 +152,7 @@ main {
   align-items: center;
   font-size: 30px;
   flex-direction: column;
+  padding-top: 20px;
 }
 
 article {
@@ -190,8 +195,8 @@ figcaption{
 }
 
 .reconhecimentos-conteudo, .reconhecimentos-conteudo-2 {
-  border: 2px solid #d1dbec;
-  background-color: #d1dbec;
+  border: 2px solid #ffffff;
+  background-color: #ffffff;
   border-radius: 15px;
   padding: 20px 30px 30px 30px;
 }
@@ -401,8 +406,7 @@ footer{
 
 @media screen and (min-width:901px) {
   .headerclass nav{
-    padding-right: 160px;
-    padding-top: 15px;
+    padding: 16px 130px 15px 0;
   }
 
   article img{
